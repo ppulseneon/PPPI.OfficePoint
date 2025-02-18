@@ -18,10 +18,10 @@
 
 **macOS**:
 - Runtime: 10.15
-- Для сборки: 12 (13 for aarch64) + Xcode 14
+- Для сборки: 12 (13 для aarch64) + Xcode 14
 
 **Linux**:
-- Runtime: RHEL 8 or CentOS 8 and comparable
+- Runtime: RHEL 8 или CentOS 8 и аналогичные
 - Для сборки: either GCC 12; или Clang 12 вместе с libstdc++ 10
 
 ## Примечание к разработке
