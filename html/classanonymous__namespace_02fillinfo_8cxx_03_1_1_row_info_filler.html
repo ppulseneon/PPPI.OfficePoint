@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OfficePoint: Класс anonymous_namespace{fillinfo.cxx}::RowInfoFiller</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">OfficePoint<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classanonymous__namespace_02fillinfo_8cxx_03_1_1_row_info_filler.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="classanonymous__namespace_02fillinfo_8cxx_03_1_1_row_info_filler-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс anonymous_namespace{fillinfo.cxx}::RowInfoFiller</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac5f9f607242e31fae1aa3fabe75acb9b" id="r_ac5f9f607242e31fae1aa3fabe75acb9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5f9f607242e31fae1aa3fabe75acb9b">RowInfoFiller</a> (ScDocument &amp;rDoc, SCTAB nTab, RowInfo *pRowInfo, SCCOL nCol, SCSIZE nArrY, SCCOL nStartCol)</td></tr>
+<tr class="separator:ac5f9f607242e31fae1aa3fabe75acb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62313f4b5e53d85c9d6ebe7c9cb2eff" id="r_ab62313f4b5e53d85c9d6ebe7c9cb2eff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab62313f4b5e53d85c9d6ebe7c9cb2eff">operator()</a> (size_t nRow, double fVal)</td></tr>
+<tr class="separator:ab62313f4b5e53d85c9d6ebe7c9cb2eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0bfff274323725b6e33e5e41f1ad2b" id="r_acb0bfff274323725b6e33e5e41f1ad2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb0bfff274323725b6e33e5e41f1ad2b">operator()</a> (size_t nRow, const svl::SharedString &amp;rStr)</td></tr>
+<tr class="separator:acb0bfff274323725b6e33e5e41f1ad2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf974297663ac074999fc29af037ae3" id="r_a4bf974297663ac074999fc29af037ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bf974297663ac074999fc29af037ae3">operator()</a> (size_t nRow, const EditTextObject *p)</td></tr>
+<tr class="separator:a4bf974297663ac074999fc29af037ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23bb3f72073541bd5425246456e162b6" id="r_a23bb3f72073541bd5425246456e162b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23bb3f72073541bd5425246456e162b6">operator()</a> (size_t nRow, const ScFormulaCell *p)</td></tr>
+<tr class="separator:a23bb3f72073541bd5425246456e162b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a2629d74b2a948d9340dcc58c580c4de6" id="r_a2629d74b2a948d9340dcc58c580c4de6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2629d74b2a948d9340dcc58c580c4de6">isHidden</a> (size_t nRow)</td></tr>
+<tr class="separator:a2629d74b2a948d9340dcc58c580c4de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa287b0ae699551794c73313dd6ba7949" id="r_aa287b0ae699551794c73313dd6ba7949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa287b0ae699551794c73313dd6ba7949">alignArray</a> (size_t nRow)</td></tr>
+<tr class="separator:aa287b0ae699551794c73313dd6ba7949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cde33b90f108b3740a44e3b2906bf0" id="r_a86cde33b90f108b3740a44e3b2906bf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86cde33b90f108b3740a44e3b2906bf0">setInfo</a> (size_t nRow, const ScRefCellValue &amp;rCell)</td></tr>
+<tr class="separator:a86cde33b90f108b3740a44e3b2906bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ae908f3b41a9dfab46ec6c8d21713b168" id="r_ae908f3b41a9dfab46ec6c8d21713b168"><td class="memItemLeft" align="right" valign="top">ScDocument &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae908f3b41a9dfab46ec6c8d21713b168">mrDoc</a></td></tr>
+<tr class="separator:ae908f3b41a9dfab46ec6c8d21713b168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ccd028d228827b4acc49e322d57a00d" id="r_a2ccd028d228827b4acc49e322d57a00d"><td class="memItemLeft" align="right" valign="top">SCTAB&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ccd028d228827b4acc49e322d57a00d">mnTab</a></td></tr>
+<tr class="separator:a2ccd028d228827b4acc49e322d57a00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c26d4b3206b6682252e102c8b675b2" id="r_a09c26d4b3206b6682252e102c8b675b2"><td class="memItemLeft" align="right" valign="top">RowInfo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09c26d4b3206b6682252e102c8b675b2">mpRowInfo</a></td></tr>
+<tr class="separator:a09c26d4b3206b6682252e102c8b675b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94016a208f55cb417a791a7544734f52" id="r_a94016a208f55cb417a791a7544734f52"><td class="memItemLeft" align="right" valign="top">SCCOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94016a208f55cb417a791a7544734f52">mnCol</a></td></tr>
+<tr class="separator:a94016a208f55cb417a791a7544734f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155c2f7decbe4733ee6b761caa93ac8d" id="r_a155c2f7decbe4733ee6b761caa93ac8d"><td class="memItemLeft" align="right" valign="top">SCSIZE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a155c2f7decbe4733ee6b761caa93ac8d">mnArrY</a></td></tr>
+<tr class="separator:a155c2f7decbe4733ee6b761caa93ac8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bff1be9bb0da52840b201f0cde9eb4b" id="r_a5bff1be9bb0da52840b201f0cde9eb4b"><td class="memItemLeft" align="right" valign="top">SCCOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bff1be9bb0da52840b201f0cde9eb4b">mnStartCol</a></td></tr>
+<tr class="separator:a5bff1be9bb0da52840b201f0cde9eb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49d0404838fac9998d989c3b9111a4f" id="r_af49d0404838fac9998d989c3b9111a4f"><td class="memItemLeft" align="right" valign="top">SCROW&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af49d0404838fac9998d989c3b9111a4f">mnHiddenEndRow</a></td></tr>
+<tr class="separator:af49d0404838fac9998d989c3b9111a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7cd55d4a4bee0009e25d41314c81653" id="r_ae7cd55d4a4bee0009e25d41314c81653"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7cd55d4a4bee0009e25d41314c81653">mbHiddenRow</a></td></tr>
+<tr class="separator:ae7cd55d4a4bee0009e25d41314c81653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ac5f9f607242e31fae1aa3fabe75acb9b" name="ac5f9f607242e31fae1aa3fabe75acb9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f9f607242e31fae1aa3fabe75acb9b">&#9670;&#160;</a></span>RowInfoFiller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous_namespace{fillinfo.cxx}::RowInfoFiller::RowInfoFiller </td>
+          <td>(</td>
+          <td class="paramtype">ScDocument &amp;</td>          <td class="paramname"><span class="paramname"><em>rDoc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCTAB</td>          <td class="paramname"><span class="paramname"><em>nTab</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RowInfo *</td>          <td class="paramname"><span class="paramname"><em>pRowInfo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCCOL</td>          <td class="paramname"><span class="paramname"><em>nCol</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCSIZE</td>          <td class="paramname"><span class="paramname"><em>nArrY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCCOL</td>          <td class="paramname"><span class="paramname"><em>nStartCol</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="aa287b0ae699551794c73313dd6ba7949" name="aa287b0ae699551794c73313dd6ba7949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa287b0ae699551794c73313dd6ba7949">&#9670;&#160;</a></span>alignArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{fillinfo.cxx}::RowInfoFiller::alignArray </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>nRow</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2629d74b2a948d9340dcc58c580c4de6" name="a2629d74b2a948d9340dcc58c580c4de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2629d74b2a948d9340dcc58c580c4de6">&#9670;&#160;</a></span>isHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool anonymous_namespace{fillinfo.cxx}::RowInfoFiller::isHidden </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>nRow</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bf974297663ac074999fc29af037ae3" name="a4bf974297663ac074999fc29af037ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf974297663ac074999fc29af037ae3">&#9670;&#160;</a></span>operator()() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{fillinfo.cxx}::RowInfoFiller::operator() </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>nRow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const EditTextObject *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23bb3f72073541bd5425246456e162b6" name="a23bb3f72073541bd5425246456e162b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23bb3f72073541bd5425246456e162b6">&#9670;&#160;</a></span>operator()() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{fillinfo.cxx}::RowInfoFiller::operator() </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>nRow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ScFormulaCell *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb0bfff274323725b6e33e5e41f1ad2b" name="acb0bfff274323725b6e33e5e41f1ad2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0bfff274323725b6e33e5e41f1ad2b">&#9670;&#160;</a></span>operator()() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{fillinfo.cxx}::RowInfoFiller::operator() </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>nRow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const svl::SharedString &amp;</td>          <td class="paramname"><span class="paramname"><em>rStr</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab62313f4b5e53d85c9d6ebe7c9cb2eff" name="ab62313f4b5e53d85c9d6ebe7c9cb2eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62313f4b5e53d85c9d6ebe7c9cb2eff">&#9670;&#160;</a></span>operator()() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{fillinfo.cxx}::RowInfoFiller::operator() </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>nRow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>fVal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86cde33b90f108b3740a44e3b2906bf0" name="a86cde33b90f108b3740a44e3b2906bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86cde33b90f108b3740a44e3b2906bf0">&#9670;&#160;</a></span>setInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void anonymous_namespace{fillinfo.cxx}::RowInfoFiller::setInfo </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>nRow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ScRefCellValue &amp;</td>          <td class="paramname"><span class="paramname"><em>rCell</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ae7cd55d4a4bee0009e25d41314c81653" name="ae7cd55d4a4bee0009e25d41314c81653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7cd55d4a4bee0009e25d41314c81653">&#9670;&#160;</a></span>mbHiddenRow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool anonymous_namespace{fillinfo.cxx}::RowInfoFiller::mbHiddenRow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a155c2f7decbe4733ee6b761caa93ac8d" name="a155c2f7decbe4733ee6b761caa93ac8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a155c2f7decbe4733ee6b761caa93ac8d">&#9670;&#160;</a></span>mnArrY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCSIZE anonymous_namespace{fillinfo.cxx}::RowInfoFiller::mnArrY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94016a208f55cb417a791a7544734f52" name="a94016a208f55cb417a791a7544734f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94016a208f55cb417a791a7544734f52">&#9670;&#160;</a></span>mnCol</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCCOL anonymous_namespace{fillinfo.cxx}::RowInfoFiller::mnCol</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af49d0404838fac9998d989c3b9111a4f" name="af49d0404838fac9998d989c3b9111a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49d0404838fac9998d989c3b9111a4f">&#9670;&#160;</a></span>mnHiddenEndRow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCROW anonymous_namespace{fillinfo.cxx}::RowInfoFiller::mnHiddenEndRow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bff1be9bb0da52840b201f0cde9eb4b" name="a5bff1be9bb0da52840b201f0cde9eb4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bff1be9bb0da52840b201f0cde9eb4b">&#9670;&#160;</a></span>mnStartCol</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCCOL anonymous_namespace{fillinfo.cxx}::RowInfoFiller::mnStartCol</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ccd028d228827b4acc49e322d57a00d" name="a2ccd028d228827b4acc49e322d57a00d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ccd028d228827b4acc49e322d57a00d">&#9670;&#160;</a></span>mnTab</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCTAB anonymous_namespace{fillinfo.cxx}::RowInfoFiller::mnTab</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09c26d4b3206b6682252e102c8b675b2" name="a09c26d4b3206b6682252e102c8b675b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c26d4b3206b6682252e102c8b675b2">&#9670;&#160;</a></span>mpRowInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RowInfo* anonymous_namespace{fillinfo.cxx}::RowInfoFiller::mpRowInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae908f3b41a9dfab46ec6c8d21713b168" name="ae908f3b41a9dfab46ec6c8d21713b168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae908f3b41a9dfab46ec6c8d21713b168">&#9670;&#160;</a></span>mrDoc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScDocument&amp; anonymous_namespace{fillinfo.cxx}::RowInfoFiller::mrDoc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/<a class="el" href="fillinfo_8cxx.html">fillinfo.cxx</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceanonymous__namespace_02fillinfo_8cxx_03.html">anonymous_namespace{fillinfo.cxx}</a></li><li class="navelem"><a class="el" href="classanonymous__namespace_02fillinfo_8cxx_03_1_1_row_info_filler.html">RowInfoFiller</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
