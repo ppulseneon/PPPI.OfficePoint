@@ -5,14 +5,62 @@
     </info>
 <chapter>
     <title>Пространства имен</title>
+<xi:include href="namespaceanonymous__namespace_02colorscale_8cxx_03.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceanonymous__namespace_02column_8cxx_03.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceanonymous__namespace_02fileutil_8cxx_03.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceanonymous__namespace_02fillinfo_8cxx_03.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceanonymous__namespace_02fract_8cxx_03.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceanonymous__namespace_02global_8cxx_03.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceanonymous__namespace_02urlobj_8cxx_03.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacecolor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacesc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacetools.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <chapter>
     <title>Классы</title>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_broadcast_broadcasters_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_calc_after_load_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structanonymous__namespace_02column_8cxx_03_1_1_calc_all_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_check_vectorization_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_compile_all_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_compile_error_cells_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_compile_x_m_l_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_copy_as_link_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_copy_by_clone_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_copy_text_attr_to_clip_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_copy_to_clip_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_delete_tab_updater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_find_edit_cells_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_formula_group_picker.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structanonymous__namespace_02global_8cxx_03_1_1_get_mutex.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_insert_abs_tab_updater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_insert_tab_updater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_move_tab_updater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classsc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1_1_name_resolver.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_note_caption_updater.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="struct_i_net_u_r_l_object_1_1_prefix_info.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_recalc_on_ref_move_collector.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structanonymous__namespace_02column_8cxx_03_1_1_reset_changed_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02fillinfo_8cxx_03_1_1_row_info_filler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="struct_i_net_u_r_l_object_1_1_scheme_info.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structanonymous__namespace_02colorscale_8cxx_03_1_1_sc_icon_set_bitmap_map.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structanonymous__namespace_02column_8cxx_03_1_1_set_dirty_after_load_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_set_dirty_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structanonymous__namespace_02column_8cxx_03_1_1_set_dirty_if_postponed_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_set_dirty_on_range_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structanonymous__namespace_02column_8cxx_03_1_1_set_dirty_var_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_set_table_op_dirty_on_range_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_shared_top_formula_cell_picker.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_tab_no_setter.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_update_compile_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_update_grow_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_update_ref_expand_group_bound_checker.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_update_ref_group_bound_checker.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_update_ref_on_copy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_update_ref_on_non_copy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_update_trans_handler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classanonymous__namespace_02column_8cxx_03_1_1_used_range_name_finder.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <chapter>
     <title>Файлы</title>

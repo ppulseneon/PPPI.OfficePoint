@@ -29,14 +29,18 @@ var NAVTREE =
       [ "Пространства имен", "namespaces.html", "namespaces_dup" ],
       [ "Члены пространств имен", "namespacemembers.html", [
         [ "Указатель", "namespacemembers.html", null ],
-        [ "Функции", "namespacemembers_func.html", null ]
+        [ "Функции", "namespacemembers_func.html", null ],
+        [ "Переменные", "namespacemembers_vars.html", null ],
+        [ "Элементы перечислений", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
       [ "Алфавитный указатель классов", "classes.html", null ],
+      [ "Иерархия классов", "hierarchy.html", "hierarchy" ],
       [ "Члены классов", "functions.html", [
-        [ "Указатель", "functions.html", null ],
+        [ "Указатель", "functions.html", "functions_dup" ],
+        [ "Функции", "functions_func.html", null ],
         [ "Переменные", "functions_vars.html", null ],
         [ "Перечисления", "functions_enum.html", null ]
       ] ]
@@ -56,7 +60,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_pivot_table_format_output_8cxx.html"
+"_pivot_table_format_output_8cxx.html",
+"classanonymous__namespace_02column_8cxx_03_1_1_insert_tab_updater.html#a4aaacf6db7983c2ffc46157763f44199",
+"classanonymous__namespace_02fillinfo_8cxx_03_1_1_row_info_filler.html#a94016a208f55cb417a791a7544734f52"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

@@ -1,8 +1,25 @@
 var searchData=
 [
-  ['color_0',['color',['../namespacecolor.html',1,'']]],
-  ['color_2ecxx_1',['color.cxx',['../color_8cxx.html',1,'']]],
-  ['colorscale_2ecxx_2',['colorscale.cxx',['../colorscale_8cxx.html',1,'']]],
-  ['column_2ecxx_3',['column.cxx',['../column_8cxx.html',1,'']]],
-  ['createfromstring_4',['createFromString',['../namespacecolor.html#ab51a9a12ab7bc80a8cb47b018c290313',1,'color']]]
+  ['calcafterloadhandler_0',['CalcAfterLoadHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_calc_after_load_handler.html',1,'anonymous_namespace{column.cxx}::CalcAfterLoadHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_calc_after_load_handler.html#ad6dd8dd5b3e7c9902e6c58a3b268dd58',1,'anonymous_namespace{column.cxx}::CalcAfterLoadHandler::CalcAfterLoadHandler()']]],
+  ['calcallhandler_1',['CalcAllHandler',['../structanonymous__namespace_02column_8cxx_03_1_1_calc_all_handler.html',1,'anonymous_namespace{column.cxx}']]],
+  ['calccolor_2',['CalcColor',['../namespaceanonymous__namespace_02colorscale_8cxx_03.html#a513ba00e8c6f18157d1bd8f76f099e9f',1,'anonymous_namespace{colorscale.cxx}']]],
+  ['cancopyvalue_3',['canCopyValue',['../namespaceanonymous__namespace_02column_8cxx_03.html#a19417b14881740122cbe35dfd0bb7a38',1,'anonymous_namespace{column.cxx}']]],
+  ['checked_5fmultiply_5fby_4',['checked_multiply_by',['../namespaceanonymous__namespace_02fract_8cxx_03.html#a3ca187a8588a500e21fab7d6ce3ce782',1,'anonymous_namespace{fract.cxx}']]],
+  ['checkformatchinglines_5',['checkForMatchingLines',['../namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03.html#a5f06c7f562ef3c9705c6db549784b575',1,'sc::anonymous_namespace{PivotTableFormatOutput.cxx}']]],
+  ['checkvectorizationhandler_6',['CheckVectorizationHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_check_vectorization_handler.html',1,'anonymous_namespace{column.cxx}::CheckVectorizationHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_check_vectorization_handler.html#a7d721aa7074c20fba62b862b849e9f0d',1,'anonymous_namespace{column.cxx}::CheckVectorizationHandler::CheckVectorizationHandler()']]],
+  ['cloneformulacell_7',['cloneFormulaCell',['../classanonymous__namespace_02column_8cxx_03_1_1_copy_by_clone_handler.html#a48ff4d0e0dacf65f41a01b85c1e48b16',1,'anonymous_namespace{column.cxx}::CopyByCloneHandler']]],
+  ['color_8',['color',['../namespacecolor.html',1,'']]],
+  ['color_2ecxx_9',['color.cxx',['../color_8cxx.html',1,'']]],
+  ['colorscale_2ecxx_10',['colorscale.cxx',['../colorscale_8cxx.html',1,'']]],
+  ['column_2ecxx_11',['column.cxx',['../column_8cxx.html',1,'']]],
+  ['compileallhandler_12',['CompileAllHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_compile_all_handler.html',1,'anonymous_namespace{column.cxx}::CompileAllHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_compile_all_handler.html#a94331d768b64576f06c3e6fc860d156f',1,'anonymous_namespace{column.cxx}::CompileAllHandler::CompileAllHandler()']]],
+  ['compileerrorcellshandler_13',['CompileErrorCellsHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_compile_error_cells_handler.html',1,'anonymous_namespace{column.cxx}::CompileErrorCellsHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_compile_error_cells_handler.html#a4c55bc69cfe0ef05a0047d5eabb6618f',1,'anonymous_namespace{column.cxx}::CompileErrorCellsHandler::CompileErrorCellsHandler()']]],
+  ['compilexmlhandler_14',['CompileXMLHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_compile_x_m_l_handler.html',1,'anonymous_namespace{column.cxx}::CompileXMLHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_compile_x_m_l_handler.html#aab1941d9384af5100b28e6a9d0c99b70',1,'anonymous_namespace{column.cxx}::CompileXMLHandler::CompileXMLHandler()']]],
+  ['copyaslinkhandler_15',['CopyAsLinkHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_copy_as_link_handler.html',1,'anonymous_namespace{column.cxx}::CopyAsLinkHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_copy_as_link_handler.html#a358388fd21d48e496c429a8d49636e86',1,'anonymous_namespace{column.cxx}::CopyAsLinkHandler::CopyAsLinkHandler()']]],
+  ['copybyclonehandler_16',['CopyByCloneHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_copy_by_clone_handler.html',1,'anonymous_namespace{column.cxx}::CopyByCloneHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_copy_by_clone_handler.html#a74de9c372661a8a6b1b925bf2846dc8b',1,'anonymous_namespace{column.cxx}::CopyByCloneHandler::CopyByCloneHandler()']]],
+  ['copytextattrtocliphandler_17',['CopyTextAttrToClipHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_copy_text_attr_to_clip_handler.html',1,'anonymous_namespace{column.cxx}::CopyTextAttrToClipHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_copy_text_attr_to_clip_handler.html#abdc1a86e8ae6d2a2cd2c031f5c1e98dd',1,'anonymous_namespace{column.cxx}::CopyTextAttrToClipHandler::CopyTextAttrToClipHandler()']]],
+  ['copytocliphandler_18',['CopyToClipHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_copy_to_clip_handler.html',1,'anonymous_namespace{column.cxx}::CopyToClipHandler'],['../classanonymous__namespace_02column_8cxx_03_1_1_copy_to_clip_handler.html#a95c8beec6092fbf196176f06383aad1b',1,'anonymous_namespace{column.cxx}::CopyToClipHandler::CopyToClipHandler()']]],
+  ['createfromstring_19',['createFromString',['../namespacecolor.html#ab51a9a12ab7bc80a8cb47b018c290313',1,'color']]],
+  ['createrefblock_20',['createRefBlock',['../classanonymous__namespace_02column_8cxx_03_1_1_copy_as_link_handler.html#a5c8fe381e05ee5909499491c9f47fa06',1,'anonymous_namespace{column.cxx}::CopyAsLinkHandler']]],
+  ['createrefcell_21',['createRefCell',['../classanonymous__namespace_02column_8cxx_03_1_1_copy_as_link_handler.html#ae99d29bdfe63a25508d963714fa29ef6',1,'anonymous_namespace{column.cxx}::CopyAsLinkHandler']]]
 ];

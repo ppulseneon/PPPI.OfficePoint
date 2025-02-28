@@ -383,11 +383,15 @@ bool operator > ( const Fraction& rVal1, const Fraction& rVal2 )
     return toRational(rVal1.mnNumerator, rVal1.mnDenominator) > toRational(rVal2.mnNumerator, rVal2.mnDenominator);
 }
 
-// If dVal > LONG_MAX or dVal < LONG_MIN, the rational throws a boost::bad_rational.
-// Otherwise, dVal and denominator are multiplied by 10, until one of them
-// is larger than (LONG_MAX / 10).
-//
-// NOTE: here we use 'sal_Int32' due that only values in sal_Int32 range are valid.
+/**
+ * @brief Преобразование вещественного числа в рациональное представление.
+ *
+ * Преобразует значение типа double в рациональное число (числитель/знаменатель).
+ * Используется для точного представления вещественных чисел.
+ *
+ * @param dVal Вещественное число
+ * @return boost::rational<sal_Int32> Рациональное представление числа
+ */
 static boost::rational<sal_Int32> rational_FromDouble(double dVal)
 {
     if ( dVal > std::numeric_limits<sal_Int32>::max() ||
@@ -404,6 +408,15 @@ static boost::rational<sal_Int32> rational_FromDouble(double dVal)
     return boost::rational<sal_Int32>( sal_Int32(dVal), nDen );
 }
 
+/**
+ * @brief Упрощение рационального числа с потерей точности.
+ *
+ * Уменьшает числитель и знаменатель рационального числа до заданного количества значимых бит.
+ * Может использоваться для оптимизации вычислений за счет снижения точности.
+ *
+ * @param rRational Рациональное число для упрощения
+ * @param nSignificantBits Количество значимых бит
+ */
 static void rational_ReduceInaccurate(boost::rational<sal_Int32>& rRational, unsigned nSignificantBits)
 {
     if ( !rRational )

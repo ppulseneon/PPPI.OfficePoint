@@ -1,5 +1,27 @@
 var searchData=
 [
-  ['rational_5ffromdouble_0',['rational_FromDouble',['../fract_8cxx.html#a3e3e7748f581d1f6c2da21ac19667439',1,'fract.cxx']]],
-  ['rational_5freduceinaccurate_1',['rational_ReduceInaccurate',['../fract_8cxx.html#ae81fa39c3c73d2fd30e632051d567f5a',1,'fract.cxx']]]
+  ['pa_0',['PA',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a0b1adfaf3959513fbf78c1239c3718a8',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['parsescheme_1',['parseScheme',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#ae9a9db697bbfbdca138ecd3f033859fa',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pbitmaps_2',['pBitmaps',['../structanonymous__namespace_02colorscale_8cxx_03_1_1_sc_icon_set_bitmap_map.html#a52fdbfef8f8033b3a120c10fd703d5b2',1,'anonymous_namespace{colorscale.cxx}::ScIconSetBitmapMap']]],
+  ['pd_3',['PD',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a582f18d3732706edf1c771aa314bc499',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pe_4',['PE',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a4b218b6eed4b3786b1434bb1518b209f',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pf_5',['PF',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a80f94c2d4854cb97fba6bb1cc45fb95c',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pg_6',['PG',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a63f3d815c02eedbc9c0260c33404de26',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['ph_7',['PH',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a6f705f05b3103534af7062904ddd4bdf',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pi_8',['PI',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061ae5281f638b19a85cf0d34dd24ec3512b',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pivottableformatoutput_2ecxx_9',['PivotTableFormatOutput.cxx',['../_pivot_table_format_output_8cxx.html',1,'']]],
+  ['pj_10',['PJ',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a347deee80bf8671a6a26f81d21b8b14f',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pk_11',['PK',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061af73c9ccb9254e74f696dc52d43a52ec7',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pl_12',['PL',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a75dfdbf1747b3ce2f74246cba5e20d27',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pm_13',['PM',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a4b4211a33743c36464bd38b4f634edc5',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pn_14',['PN',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061aeaf5176f62b23764c45413299e38cfd3',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['po_15',['PO',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a544d1e64a795af7d6e36ff0e2a4ea0f7',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['point_2ecxx_16',['point.cxx',['../point_8cxx.html',1,'']]],
+  ['pp_17',['PP',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061a2422aa8925eb249ca84773ecd0997239',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pq_18',['PQ',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061ab857712db7e3c57364e3c54ace518240',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['pr_19',['PR',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a1d519955cc37357f55287d2f7c9c6061ad1f6c9ee43880a670797c46627d9ec2b',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['prefixinfo_20',['PrefixInfo',['../struct_i_net_u_r_l_object_1_1_prefix_info.html',1,'INetURLObject']]],
+  ['processnonshared_21',['processNonShared',['../classanonymous__namespace_02column_8cxx_03_1_1_shared_top_formula_cell_picker.html#a9b2d2b6ec09b18f196dd11244ab61fc3',1,'anonymous_namespace{column.cxx}::SharedTopFormulaCellPicker::processNonShared()'],['../classanonymous__namespace_02column_8cxx_03_1_1_formula_group_picker.html#a343016576ab42aee2628612719bc15d0',1,'anonymous_namespace{column.cxx}::FormulaGroupPicker::processNonShared()']]],
+  ['processsharedtop_22',['processSharedTop',['../classanonymous__namespace_02column_8cxx_03_1_1_shared_top_formula_cell_picker.html#ac431fe95475a90fcbba716fdb3db3e18',1,'anonymous_namespace{column.cxx}::SharedTopFormulaCellPicker::processSharedTop()'],['../classanonymous__namespace_02column_8cxx_03_1_1_update_ref_group_bound_checker.html#af1742ceeb517da6c6b830b65608371b5',1,'anonymous_namespace{column.cxx}::UpdateRefGroupBoundChecker::processSharedTop()'],['../classanonymous__namespace_02column_8cxx_03_1_1_update_ref_expand_group_bound_checker.html#ae9adfa1d83b29d0bba710f6e7855f776',1,'anonymous_namespace{column.cxx}::UpdateRefExpandGroupBoundChecker::processSharedTop()'],['../classanonymous__namespace_02column_8cxx_03_1_1_formula_group_picker.html#aaa2a7be3b7004fa6bf465aaf4bafa9ef',1,'anonymous_namespace{column.cxx}::FormulaGroupPicker::processSharedTop()']]],
+  ['pscactiveviewshell_23',['pScActiveViewShell',['../global_8cxx.html#a05933fedce0b6b65578091d55b1824c9',1,'global.cxx']]]
 ];

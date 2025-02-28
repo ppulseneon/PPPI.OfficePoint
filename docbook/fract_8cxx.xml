@@ -3,17 +3,30 @@
 <title>Файл source/generic/fract.cxx</title>
 <indexterm><primary>source/generic/fract.cxx</primary></indexterm>
 <programlisting linenumbering="unnumbered">#include &lt;tools/fract.hxx&gt;<?linebreak?>#include &lt;tools/debug.hxx&gt;<?linebreak?>#include &lt;o3tl/hash_combine.hxx&gt;<?linebreak?>#include &lt;o3tl/safeint.hxx&gt;<?linebreak?>#include &lt;sal/log.hxx&gt;<?linebreak?>#include &lt;osl/diagnose.h&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;bit&gt;<?linebreak?>#include &lt;cmath&gt;<?linebreak?>#include &lt;numeric&gt;<?linebreak?>#include &lt;boost/rational.hpp&gt;<?linebreak?></programlisting><simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceanonymous__namespace_02fract_8cxx_03">anonymous_namespace{fract.cxx}</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Функции    </title>
         <itemizedlist>
             <listitem><para>static boost::rational&lt; sal_Int32 &gt; <link linkend="_fract_8cxx_1a3e3e7748f581d1f6c2da21ac19667439">rational_FromDouble</link> (double dVal)</para>
+
+<para>Преобразование вещественного числа в рациональное представление. </para>
 </listitem>
             <listitem><para>static void <link linkend="_fract_8cxx_1ae81fa39c3c73d2fd30e632051d567f5a">rational_ReduceInaccurate</link> (boost::rational&lt; sal_Int32 &gt; &amp;rRational, unsigned nSignificantBits)</para>
+
+<para>Упрощение рационального числа с потерей точности. </para>
 </listitem>
             <listitem><para>static int <link linkend="_fract_8cxx_1a0392dcc2defe1394eed470cf1e36b8ae">impl_NumberOfBits</link> (sal_uInt32 nNum)</para>
 </listitem>
             <listitem><para>static boost::rational&lt; sal_Int32 &gt; <link linkend="_fract_8cxx_1ab94d4a9f59dd8faa0df934b66fa2c5e5">toRational</link> (sal_Int32 n, sal_Int32 d)</para>
 </listitem>
             <listitem><para>static constexpr bool <link linkend="_fract_8cxx_1ae5ffce08364844af51ed7fafc09927c6">isOutOfRange</link> (sal_Int64 nNum)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespaceanonymous__namespace_02fract_8cxx_03_1a3ca187a8588a500e21fab7d6ce3ce782">anonymous_namespace{fract.cxx}::checked_multiply_by</link> (boost::rational&lt; sal_Int32 &gt; &amp;i, const boost::rational&lt; sal_Int32 &gt; &amp;r)</para>
 </listitem>
             <listitem><para>Fraction <link linkend="_fract_8cxx_1a78b9be4f1c01e2732f593867cdf562a5">operator+</link> (const Fraction &amp;rVal1, const Fraction &amp;rVal2)</para>
 </listitem>
@@ -103,12 +116,77 @@
     <title>rational_FromDouble()</title>
 <indexterm><primary>rational_FromDouble</primary><secondary>fract.cxx</secondary></indexterm>
 <indexterm><primary>fract.cxx</primary><secondary>rational_FromDouble</secondary></indexterm>
-<para><computeroutput>static boost::rational&lt; sal_Int32 &gt; rational_FromDouble (double dVal)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>static boost::rational&lt; sal_Int32 &gt; rational_FromDouble (double dVal)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Преобразование вещественного числа в рациональное представление. </para>
+</para>
+
+<para>Преобразует значение типа double в рациональное число (числитель/знаменатель). Используется для точного представления вещественных чисел.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dVal</entry><entry>
+<para>Вещественное число </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>boost::rational&lt;sal_Int32&gt; Рациональное представление числа </para>
+</formalpara>
+</para>
+</section>
 <anchor xml:id="_fract_8cxx_1ae81fa39c3c73d2fd30e632051d567f5a"/><section>
     <title>rational_ReduceInaccurate()</title>
 <indexterm><primary>rational_ReduceInaccurate</primary><secondary>fract.cxx</secondary></indexterm>
 <indexterm><primary>fract.cxx</primary><secondary>rational_ReduceInaccurate</secondary></indexterm>
-<para><computeroutput>static void rational_ReduceInaccurate (boost::rational&lt; sal_Int32 &gt; &amp; rRational, unsigned nSignificantBits)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>static void rational_ReduceInaccurate (boost::rational&lt; sal_Int32 &gt; &amp; rRational, unsigned nSignificantBits)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Упрощение рационального числа с потерей точности. </para>
+</para>
+
+<para>Уменьшает числитель и знаменатель рационального числа до заданного количества значимых бит. Может использоваться для оптимизации вычислений за счет снижения точности.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rRational</entry><entry>
+<para>Рациональное число для упрощения </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nSignificantBits</entry><entry>
+<para>Количество значимых бит </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
 <anchor xml:id="_fract_8cxx_1ab94d4a9f59dd8faa0df934b66fa2c5e5"/><section>
     <title>toRational()</title>
 <indexterm><primary>toRational</primary><secondary>fract.cxx</secondary></indexterm>

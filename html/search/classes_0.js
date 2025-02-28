@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['prefixinfo_0',['PrefixInfo',['../struct_i_net_u_r_l_object_1_1_prefix_info.html',1,'INetURLObject']]]
+  ['broadcastbroadcastershandler_0',['BroadcastBroadcastersHandler',['../classanonymous__namespace_02column_8cxx_03_1_1_broadcast_broadcasters_handler.html',1,'anonymous_namespace{column.cxx}']]]
 ];

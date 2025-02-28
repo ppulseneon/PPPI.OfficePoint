@@ -688,7 +688,15 @@ void ScAttrArray::ApplyStyleArea( SCROW nStartRow, SCROW nEndRow, const ScStyleS
 #endif
 }
 
-    // const cast, otherwise it will be too inefficient/complicated
+/**
+ * @brief Установка цвета линии границы.
+ *
+ * Устанавливает цвет для объекта SvxBorderLine, если он существует.
+ * Используется для изменения цвета линии без создания нового объекта.
+ *
+ * @param dest Указатель на целевой объект SvxBorderLine (может быть nullptr).
+ * @param c Цвет, который нужно установить для линии.
+ */
 static void SetLineColor(SvxBorderLine const * dest, Color c)
 {
     if (dest)
@@ -697,6 +705,16 @@ static void SetLineColor(SvxBorderLine const * dest, Color c)
     }
 }
 
+/**
+ * @brief Копирование свойств линии границы.
+ *
+ * Копирует стиль и ширину линии из одного объекта SvxBorderLine в другой,
+ * если целевой объект существует. Используется для синхронизации свойств
+ * линий границ.
+ *
+ * @param dest Указатель на целевой объект SvxBorderLine (может быть nullptr).
+ * @param src Указатель на исходный объект SvxBorderLine, откуда копируются свойства.
+ */
 static void SetLine(const SvxBorderLine* dest, const SvxBorderLine* src)
 {
     if (dest)

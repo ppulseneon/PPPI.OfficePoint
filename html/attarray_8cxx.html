@@ -138,8 +138,10 @@ $(function(){initNavTree('attarray_8cxx.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
 <tr class="memitem:a3b87dd3d6c27ef4201a5d6b3be6040e0" id="r_a3b87dd3d6c27ef4201a5d6b3be6040e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b87dd3d6c27ef4201a5d6b3be6040e0">SetLineColor</a> (SvxBorderLine const *dest, Color c)</td></tr>
+<tr class="memdesc:a3b87dd3d6c27ef4201a5d6b3be6040e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка цвета линии границы.  <br /></td></tr>
 <tr class="separator:a3b87dd3d6c27ef4201a5d6b3be6040e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a526d3efa39ef0dbd3c2c21d6521b1de0" id="r_a526d3efa39ef0dbd3c2c21d6521b1de0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a526d3efa39ef0dbd3c2c21d6521b1de0">SetLine</a> (const SvxBorderLine *dest, const SvxBorderLine *src)</td></tr>
+<tr class="memdesc:a526d3efa39ef0dbd3c2c21d6521b1de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копирование свойств линии границы.  <br /></td></tr>
 <tr class="separator:a526d3efa39ef0dbd3c2c21d6521b1de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a992b0c42e15d7468739a58bbc07f519d" id="r_a992b0c42e15d7468739a58bbc07f519d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a992b0c42e15d7468739a58bbc07f519d">lcl_MergeDeep</a> (SfxItemSet &amp;rMergeSet, const SfxItemSet &amp;rSource)</td></tr>
 <tr class="separator:a992b0c42e15d7468739a58bbc07f519d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,6 +310,16 @@ $(function(){initNavTree('attarray_8cxx.html',''); initResizable(true); });
 </table>
 </div><div class="memdoc">
 
+<p>Копирование свойств линии границы. </p>
+<p>Копирует стиль и ширину линии из одного объекта SvxBorderLine в другой, если целевой объект существует. Используется для синхронизации свойств линий границ.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>Указатель на целевой объект SvxBorderLine (может быть nullptr). </td></tr>
+    <tr><td class="paramname">src</td><td>Указатель на исходный объект SvxBorderLine, откуда копируются свойства. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3b87dd3d6c27ef4201a5d6b3be6040e0" name="a3b87dd3d6c27ef4201a5d6b3be6040e0"></a>
@@ -336,6 +348,16 @@ $(function(){initNavTree('attarray_8cxx.html',''); initResizable(true); });
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Установка цвета линии границы. </p>
+<p>Устанавливает цвет для объекта SvxBorderLine, если он существует. Используется для изменения цвета линии без создания нового объекта.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>Указатель на целевой объект SvxBorderLine (может быть nullptr). </td></tr>
+    <tr><td class="paramname">c</td><td>Цвет, который нужно установить для линии. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

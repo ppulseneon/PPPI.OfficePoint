@@ -109,6 +109,9 @@ $(function(){initNavTree('struct_i_net_u_r_l_object_1_1_prefix_info.html',''); i
   <div class="headertitle"><div class="title">Структура INetURLObject::PrefixInfo</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Структура, описывающая информацию о префиксе URL.  
+ <a href="#details">Подробнее...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Открытые типы</h2></td></tr>
@@ -116,20 +119,28 @@ $(function(){initNavTree('struct_i_net_u_r_l_object_1_1_prefix_info.html',''); i
 , <a class="el" href="#a5e8c95dfb0ec081b437da98ac872fef1aafbf0897a5a83fdd873dfb032ec695d3">Internal</a>
 , <a class="el" href="#a5e8c95dfb0ec081b437da98ac872fef1ab206a1b4ea1097761f78e8876f6da779">External</a>
  }</td></tr>
+<tr class="memdesc:a5e8c95dfb0ec081b437da98ac872fef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип префикса URL.  <a href="#a5e8c95dfb0ec081b437da98ac872fef1">Подробнее...</a><br /></td></tr>
 <tr class="separator:a5e8c95dfb0ec081b437da98ac872fef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Открытые атрибуты</h2></td></tr>
 <tr class="memitem:a6e25cb60fd504dea3325e2791f872fbb" id="r_a6e25cb60fd504dea3325e2791f872fbb"><td class="memItemLeft" align="right" valign="top">OUString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e25cb60fd504dea3325e2791f872fbb">m_aPrefix</a></td></tr>
+<tr class="memdesc:a6e25cb60fd504dea3325e2791f872fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Префикс URL (например, "http://", "file://").  <br /></td></tr>
 <tr class="separator:a6e25cb60fd504dea3325e2791f872fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5be9fd7b16749c9d5e197552a853874" id="r_ae5be9fd7b16749c9d5e197552a853874"><td class="memItemLeft" align="right" valign="top">OUString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5be9fd7b16749c9d5e197552a853874">m_aTranslatedPrefix</a></td></tr>
+<tr class="memdesc:ae5be9fd7b16749c9d5e197552a853874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переведенная версия префикса (локализованная строка).  <br /></td></tr>
 <tr class="separator:ae5be9fd7b16749c9d5e197552a853874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d78168f53a9d0a0e0efa28c6cdc5da0" id="r_a8d78168f53a9d0a0e0efa28c6cdc5da0"><td class="memItemLeft" align="right" valign="top">INetProtocol&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d78168f53a9d0a0e0efa28c6cdc5da0">m_eScheme</a></td></tr>
+<tr class="memdesc:a8d78168f53a9d0a0e0efa28c6cdc5da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Протокол, связанный с префиксом (например, INET_PROT_HTTP).  <br /></td></tr>
 <tr class="separator:a8d78168f53a9d0a0e0efa28c6cdc5da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba9073e61d91cc4b2dfc11108c517f8" id="r_a0ba9073e61d91cc4b2dfc11108c517f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5e8c95dfb0ec081b437da98ac872fef1">Kind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ba9073e61d91cc4b2dfc11108c517f8">m_eKind</a></td></tr>
+<tr class="memdesc:a0ba9073e61d91cc4b2dfc11108c517f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип префикса (Official, Internal или External).  <br /></td></tr>
 <tr class="separator:a0ba9073e61d91cc4b2dfc11108c517f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Перечисления</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура, описывающая информацию о префиксе URL. </p>
+<p>Содержит данные, связанные с префиксом URL, такие как сам префикс, его переведенная версия, протокол и тип префикса. Используется для обработки и классификации URL-адресов. </p>
+</div><h2 class="groupheader">Перечисления</h2>
 <a id="a5e8c95dfb0ec081b437da98ac872fef1" name="a5e8c95dfb0ec081b437da98ac872fef1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e8c95dfb0ec081b437da98ac872fef1">&#9670;&#160;</a></span>Kind</h2>
 
@@ -149,6 +160,13 @@ $(function(){initNavTree('struct_i_net_u_r_l_object_1_1_prefix_info.html',''); i
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Тип префикса URL. </p>
+<p>Определяет категорию префикса. Порядок значений важен:</p><ul>
+<li>Official: Официальный префикс (стандартный протокол).</li>
+<li>Internal: Внутренний префикс (используется внутри приложения).</li>
+<li>External: Внешний префикс (не относится к стандартным протоколам). </li>
+</ul>
 <table class="fieldtable">
 <tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a5e8c95dfb0ec081b437da98ac872fef1a0008feba81a131902ece95d59f1b8f21" name="a5e8c95dfb0ec081b437da98ac872fef1a0008feba81a131902ece95d59f1b8f21"></a>Official&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5e8c95dfb0ec081b437da98ac872fef1aafbf0897a5a83fdd873dfb032ec695d3" name="a5e8c95dfb0ec081b437da98ac872fef1aafbf0897a5a83fdd873dfb032ec695d3"></a>Internal&#160;</td><td class="fielddoc"></td></tr>
@@ -170,6 +188,8 @@ $(function(){initNavTree('struct_i_net_u_r_l_object_1_1_prefix_info.html',''); i
       </table>
 </div><div class="memdoc">
 
+<p>Префикс URL (например, "http://", "file://"). </p>
+
 </div>
 </div>
 <a id="ae5be9fd7b16749c9d5e197552a853874" name="ae5be9fd7b16749c9d5e197552a853874"></a>
@@ -183,6 +203,8 @@ $(function(){initNavTree('struct_i_net_u_r_l_object_1_1_prefix_info.html',''); i
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Переведенная версия префикса (локализованная строка). </p>
 
 </div>
 </div>
@@ -198,6 +220,8 @@ $(function(){initNavTree('struct_i_net_u_r_l_object_1_1_prefix_info.html',''); i
       </table>
 </div><div class="memdoc">
 
+<p>Тип префикса (Official, Internal или External). </p>
+
 </div>
 </div>
 <a id="a8d78168f53a9d0a0e0efa28c6cdc5da0" name="a8d78168f53a9d0a0e0efa28c6cdc5da0"></a>
@@ -211,6 +235,8 @@ $(function(){initNavTree('struct_i_net_u_r_l_object_1_1_prefix_info.html',''); i
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Протокол, связанный с префиксом (например, INET_PROT_HTTP). </p>
 
 </div>
 </div>

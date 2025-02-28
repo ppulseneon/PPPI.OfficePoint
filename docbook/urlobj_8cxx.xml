@@ -8,6 +8,62 @@
             <listitem><para>struct <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info">INetURLObject::SchemeInfo</link></para>
 </listitem>
             <listitem><para>struct <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info">INetURLObject::PrefixInfo</link></para>
+
+<para>Структура, описывающая информацию о префиксе URL. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03">anonymous_namespace{urlobj.cxx}</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Перечисления    </title>
+        <itemizedlist>
+            <listitem><para>enum { <?linebreak?><link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a0b1adfaf3959513fbf78c1239c3718a8">anonymous_namespace{urlobj.cxx}::PA</link> = INetURLObject::PART_USER_PASSWORD
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a582f18d3732706edf1c771aa314bc499">anonymous_namespace{urlobj.cxx}::PD</link> = INetURLObject::PART_FPATH
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a4b218b6eed4b3786b1434bb1518b209f">anonymous_namespace{urlobj.cxx}::PE</link> = INetURLObject::PART_AUTHORITY
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a80f94c2d4854cb97fba6bb1cc45fb95c">anonymous_namespace{urlobj.cxx}::PF</link> = INetURLObject::PART_REL_SEGMENT_EXTRA
+, <?linebreak?><link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a63f3d815c02eedbc9c0260c33404de26">anonymous_namespace{urlobj.cxx}::PG</link> = INetURLObject::PART_URIC
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a6f705f05b3103534af7062904ddd4bdf">anonymous_namespace{urlobj.cxx}::PH</link> = INetURLObject::PART_HTTP_PATH
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061ae5281f638b19a85cf0d34dd24ec3512b">anonymous_namespace{urlobj.cxx}::PI</link> = INetURLObject::PART_MESSAGE_ID_PATH
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a347deee80bf8671a6a26f81d21b8b14f">anonymous_namespace{urlobj.cxx}::PJ</link> = INetURLObject::PART_MAILTO
+, <?linebreak?><link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061af73c9ccb9254e74f696dc52d43a52ec7">anonymous_namespace{urlobj.cxx}::PK</link> = INetURLObject::PART_PATH_BEFORE_QUERY
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a75dfdbf1747b3ce2f74246cba5e20d27">anonymous_namespace{urlobj.cxx}::PL</link> = INetURLObject::PART_PCHAR
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a4b4211a33743c36464bd38b4f634edc5">anonymous_namespace{urlobj.cxx}::PM</link> = INetURLObject::PART_VISIBLE
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061aeaf5176f62b23764c45413299e38cfd3">anonymous_namespace{urlobj.cxx}::PN</link> = INetURLObject::PART_VISIBLE_NONSPECIAL
+, <?linebreak?><link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a544d1e64a795af7d6e36ff0e2a4ea0f7">anonymous_namespace{urlobj.cxx}::PO</link> = INetURLObject::PART_UNO_PARAM_VALUE
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061a2422aa8925eb249ca84773ecd0997239">anonymous_namespace{urlobj.cxx}::PP</link> = INetURLObject::PART_UNAMBIGUOUS
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061ab857712db7e3c57364e3c54ace518240">anonymous_namespace{urlobj.cxx}::PQ</link> = INetURLObject::PART_URIC_NO_SLASH
+, <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a1d519955cc37357f55287d2f7c9c6061ad1f6c9ee43880a670797c46627d9ec2b">anonymous_namespace{urlobj.cxx}::PR</link> = INetURLObject::PART_HTTP_QUERY
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>sal_Unicode <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a906eec6a9abf5f4280e7cd18331f7e9c">anonymous_namespace{urlobj.cxx}::getHexDigit</link> (sal_uInt32 nWeight)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a7a79c0ca6e1e995acb7f1302ef01e5c1">anonymous_namespace{urlobj.cxx}::mustEncode</link> (sal_uInt32 nUTF32, INetURLObject::Part ePart)</para>
+</listitem>
+            <listitem><para>std::unique_ptr&lt; SvMemoryStream &gt; <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1a3fdb3c55c51def7519054506800716dd">anonymous_namespace{urlobj.cxx}::memoryStream</link> (void const *data, sal_Int32 length)</para>
+</listitem>
+            <listitem><para>FSysStyle <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1af709db7ad3455edf67497be5dbb0917e">anonymous_namespace{urlobj.cxx}::guessFSysStyleByCounting</link> (sal_Unicode const *pBegin, sal_Unicode const *pEnd, FSysStyle eStyle)</para>
+</listitem>
+            <listitem><para>OUString <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1ae9a9db697bbfbdca138ecd3f033859fa">anonymous_namespace{urlobj.cxx}::parseScheme</link> (sal_Unicode const **begin, sal_Unicode const *end, sal_uInt32 fragmentDelimiter)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1ac579a4c4a4a78938b1735900b80d4e33">anonymous_namespace{urlobj.cxx}::lcl_Erase</link> (OUStringBuffer &amp;rBuf, sal_Int32 index, sal_Int32 count)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Переменные    </title>
+        <itemizedlist>
+            <listitem><para>sal_uInt32 const <link linkend="_namespaceanonymous__namespace_02urlobj_8cxx_03_1add413451323ea73ec9bbb6384e923b74">anonymous_namespace{urlobj.cxx}::aMustEncodeMap</link> [128]</para>
 </listitem>
         </itemizedlist>
 </simplesect>

@@ -1,5 +1,6 @@
 var fract_8cxx =
 [
+    [ "anonymous_namespace{fract.cxx}::checked_multiply_by", "namespaceanonymous__namespace_02fract_8cxx_03.html#a3ca187a8588a500e21fab7d6ce3ce782", null ],
     [ "impl_NumberOfBits", "fract_8cxx.html#a0392dcc2defe1394eed470cf1e36b8ae", null ],
     [ "isOutOfRange", "fract_8cxx.html#ae5ffce08364844af51ed7fafc09927c6", null ],
     [ "operator!=", "fract_8cxx.html#ad4ed4f0736843777c8e3d98e93c5e318", null ],

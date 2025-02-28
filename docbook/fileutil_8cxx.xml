@@ -5,6 +5,8 @@
 <programlisting linenumbering="unnumbered">#include &lt;tools/fileutil.hxx&gt;<?linebreak?></programlisting><simplesect>
     <title>Пространства имен    </title>
         <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceanonymous__namespace_02fileutil_8cxx_03">anonymous_namespace{fileutil.cxx}</link></para>
+</listitem>
             <listitem><para>namespace <link linkend="_namespacetools">tools</link></para>
 </listitem>
         </itemizedlist>

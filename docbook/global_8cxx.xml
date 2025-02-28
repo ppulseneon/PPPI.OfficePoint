@@ -3,6 +3,20 @@
 <title>Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/global.cxx</title>
 <indexterm><primary>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/global.cxx</primary></indexterm>
 <programlisting linenumbering="unnumbered">#include &lt;scitems.hxx&gt;<?linebreak?>#include &lt;svx/algitem.hxx&gt;<?linebreak?>#include &lt;editeng/brushitem.hxx&gt;<?linebreak?>#include &lt;editeng/editobj.hxx&gt;<?linebreak?>#include &lt;svl/itempool.hxx&gt;<?linebreak?>#include &lt;svl/srchitem.hxx&gt;<?linebreak?>#include &lt;editeng/langitem.hxx&gt;<?linebreak?>#include &lt;o3tl/string_view.hxx&gt;<?linebreak?>#include &lt;o3tl/unit_conversion.hxx&gt;<?linebreak?>#include &lt;sfx2/docfile.hxx&gt;<?linebreak?>#include &lt;sfx2/dispatch.hxx&gt;<?linebreak?>#include &lt;sfx2/objsh.hxx&gt;<?linebreak?>#include &lt;sfx2/sfxsids.hrc&gt;<?linebreak?>#include &lt;sfx2/viewfrm.hxx&gt;<?linebreak?>#include &lt;sfx2/viewsh.hxx&gt;<?linebreak?>#include &lt;svl/intitem.hxx&gt;<?linebreak?>#include &lt;svl/numformat.hxx&gt;<?linebreak?>#include &lt;svl/stritem.hxx&gt;<?linebreak?>#include &lt;svl/zforlist.hxx&gt;<?linebreak?>#include &lt;svl/zformat.hxx&gt;<?linebreak?>#include &lt;vcl/keycodes.hxx&gt;<?linebreak?>#include &lt;vcl/virdev.hxx&gt;<?linebreak?>#include &lt;vcl/settings.hxx&gt;<?linebreak?>#include &lt;vcl/svapp.hxx&gt;<?linebreak?>#include &lt;unotools/charclass.hxx&gt;<?linebreak?>#include &lt;unotools/securityoptions.hxx&gt;<?linebreak?>#include &lt;osl/diagnose.h&gt;<?linebreak?>#include &lt;i18nlangtag/mslangid.hxx&gt;<?linebreak?>#include &lt;comphelper/doublecheckedinit.hxx&gt;<?linebreak?>#include &lt;comphelper/processfactory.hxx&gt;<?linebreak?>#include &lt;comphelper/string.hxx&gt;<?linebreak?>#include &lt;unotools/calendarwrapper.hxx&gt;<?linebreak?>#include &lt;unotools/collatorwrapper.hxx&gt;<?linebreak?>#include &lt;unotools/syslocale.hxx&gt;<?linebreak?>#include &lt;unotools/transliterationwrapper.hxx&gt;<?linebreak?>#include &lt;comphelper/lok.hxx&gt;<?linebreak?>#include &lt;global.hxx&gt;<?linebreak?>#include &lt;scresid.hxx&gt;<?linebreak?>#include &lt;autoform.hxx&gt;<?linebreak?>#include &lt;patattr.hxx&gt;<?linebreak?>#include &lt;addincol.hxx&gt;<?linebreak?>#include &lt;adiasync.hxx&gt;<?linebreak?>#include &lt;userlist.hxx&gt;<?linebreak?>#include &lt;interpre.hxx&gt;<?linebreak?>#include &lt;unitconv.hxx&gt;<?linebreak?>#include &lt;compiler.hxx&gt;<?linebreak?>#include &lt;parclass.hxx&gt;<?linebreak?>#include &lt;funcdesc.hxx&gt;<?linebreak?>#include &lt;globstr.hrc&gt;<?linebreak?>#include &lt;strings.hrc&gt;<?linebreak?>#include &lt;scmod.hxx&gt;<?linebreak?>#include &lt;editutil.hxx&gt;<?linebreak?>#include &lt;docsh.hxx&gt;<?linebreak?>#include &lt;sharedstringpoolpurge.hxx&gt;<?linebreak?>#include &lt;formulaopt.hxx&gt;<?linebreak?></programlisting><simplesect>
+    <title>Классы    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structanonymous__namespace_02global_8cxx_03_1_1_get_mutex">anonymous_namespace{global.cxx}::GetMutex</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceanonymous__namespace_02global_8cxx_03">anonymous_namespace{global.cxx}</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Переменные    </title>
         <itemizedlist>
             <listitem><para>SfxViewShell * <link linkend="_global_8cxx_1a05933fedce0b6b65578091d55b1824c9">pScActiveViewShell</link> = nullptr</para>

@@ -3,9 +3,37 @@
 <title>Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/PivotTableFormatOutput.cxx</title>
 <indexterm><primary>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/PivotTableFormatOutput.cxx</primary></indexterm>
 <programlisting linenumbering="unnumbered">#include &lt;pivot/PivotTableFormatOutput.hxx&gt;<?linebreak?>#include &lt;pivot/DPOutLevelData.hxx&gt;<?linebreak?>#include &lt;dpoutput.hxx&gt;<?linebreak?>#include &lt;dpobject.hxx&gt;<?linebreak?>#include &lt;dptabdat.hxx&gt;<?linebreak?>#include &lt;dpcache.hxx&gt;<?linebreak?>#include &lt;document.hxx&gt;<?linebreak?>#include &lt;com/sun/star/sheet/MemberResultFlags.hpp&gt;<?linebreak?></programlisting><simplesect>
+    <title>Классы    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classsc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1_1_name_resolver">sc::anonymous_namespace{PivotTableFormatOutput.cxx}::NameResolver</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Пространства имен    </title>
         <itemizedlist>
             <listitem><para>namespace <link linkend="_namespacesc">sc</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03">sc::anonymous_namespace{PivotTableFormatOutput.cxx}</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1a9a0d3090860a508ca8ffc04805405f17">sc::anonymous_namespace{PivotTableFormatOutput.cxx}::initLines</link> (std::vector&lt; LineData &gt; &amp;rLines, std::vector&lt; ScDPOutLevelData &gt; const &amp;rFields)</para>
+</listitem>
+            <listitem><para>Selection const * <link linkend="_namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1a817b27ba4a5a5656fe29ae90c268312f">sc::anonymous_namespace{PivotTableFormatOutput.cxx}::findSelection</link> (PivotTableFormat const &amp;rFormat, tools::Long nDimension)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1a420ab1dfa5a69cf0b4e115ae17092a20">sc::anonymous_namespace{PivotTableFormatOutput.cxx}::fillOutputFieldFromSelection</link> (FormatOutputField &amp;rOutputField, Selection const &amp;rSelection, size_t nSelectionIndex, <link linkend="_classsc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1_1_name_resolver">NameResolver</link> &amp;rNameResolver)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1a1a287dc31b9fdacff8974f94fd518684">sc::anonymous_namespace{PivotTableFormatOutput.cxx}::initFormatOutputField</link> (size_t nSelectionIndex, std::vector&lt; FormatOutputField &gt; &amp;rOutputFields, std::vector&lt; ScDPOutLevelData &gt; const &amp;rFields, PivotTableFormat const &amp;rFormat, <link linkend="_classsc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1_1_name_resolver">NameResolver</link> &amp;rNameResolver)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1ac62c5512b8e95df42d3067bbd989f840">sc::anonymous_namespace{PivotTableFormatOutput.cxx}::fillLineAndFieldData</link> (std::vector&lt; LineData &gt; &amp;rLineDataVector, size_t nFieldIndex, ScDPOutLevelData const &amp;rField, tools::Long nMemberIndex, sheet::MemberResult const &amp;rMember, SCCOLROW nLine, SCCOLROW nPosition)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1a5f06c7f562ef3c9705c6db549784b575">sc::anonymous_namespace{PivotTableFormatOutput.cxx}::checkForMatchingLines</link> (std::vector&lt; LineData &gt; const &amp;rLines, std::vector&lt; FormatOutputField &gt; const &amp;rFormatOutputField, FormatType eType, std::vector&lt; std::reference_wrapper&lt; const LineData &gt; &gt; &amp;rMatches, std::vector&lt; std::reference_wrapper&lt; const LineData &gt; &gt; &amp;rMaybeMatches)</para>
+</listitem>
+            <listitem><para>void <link linkend="_namespacesc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1a8f5119b83c0cce441f71727de108e54d">sc::anonymous_namespace{PivotTableFormatOutput.cxx}::evaluateMatches</link> (ScDocument &amp;rDocument, std::vector&lt; std::reference_wrapper&lt; const LineData &gt; &gt; const &amp;rMatches, std::vector&lt; std::reference_wrapper&lt; const LineData &gt; &gt; const &amp;rMaybeMatches, std::vector&lt; SCCOLROW &gt; &amp;aRows, std::vector&lt; SCCOLROW &gt; &amp;aColumns, FormatOutputEntry const &amp;rOutputEntry, FormatResultDirection eResultDirection)</para>
 </listitem>
         </itemizedlist>
 </simplesect>

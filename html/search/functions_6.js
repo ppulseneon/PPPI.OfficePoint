@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['operator_21_3d_0',['operator!=',['../fract_8cxx.html#ad4ed4f0736843777c8e3d98e93c5e318',1,'fract.cxx']]],
-  ['operator_2a_1',['operator*',['../fract_8cxx.html#a795ff7bca3cb3fa7315b1d70f93a50f6',1,'fract.cxx']]],
-  ['operator_2b_2',['operator+',['../fract_8cxx.html#a78b9be4f1c01e2732f593867cdf562a5',1,'fract.cxx']]],
-  ['operator_2d_3',['operator-',['../fract_8cxx.html#a3c75c30c1a1b616c5c4a73ffb49f12cf',1,'fract.cxx']]],
-  ['operator_2f_4',['operator/',['../fract_8cxx.html#a45a3a14163cf1521267fc5cec5e0ebcc',1,'fract.cxx']]],
-  ['operator_3c_5',['operator&lt;',['../fract_8cxx.html#a6f64ab9247929cdc79983f129bd3b857',1,'fract.cxx']]],
-  ['operator_3c_3d_6',['operator&lt;=',['../fract_8cxx.html#adfa5f15a5faec0862b9e7284af787e72',1,'fract.cxx']]],
-  ['operator_3c_3d_3e_7',['operator&lt;=&gt;',['../bigint_8cxx.html#afbca4f153d6c5859d71a79d1c02aadf3',1,'bigint.cxx']]],
-  ['operator_3d_3d_8',['operator==',['../bigint_8cxx.html#a4f631a44622310c5129852c700b7ffd5',1,'operator==(const BigInt &amp;rVal1, const BigInt &amp;rVal2):&#160;bigint.cxx'],['../fract_8cxx.html#ab2fd9656dc9063fc801cab555c84715b',1,'operator==(const Fraction &amp;rVal1, const Fraction &amp;rVal2):&#160;fract.cxx']]],
-  ['operator_3e_9',['operator&gt;',['../fract_8cxx.html#a627eb9c7e4305cc07773c26d3f1611c8',1,'fract.cxx']]],
-  ['operator_3e_3d_10',['operator&gt;=',['../fract_8cxx.html#ad2e746ac567b15dab93d69e01f44c4af',1,'fract.cxx']]]
+  ['getcolorvalue_0',['GetColorValue',['../namespaceanonymous__namespace_02colorscale_8cxx_03.html#ab6e3fecabd4de6c5af3d573e6cc1cc73',1,'anonymous_namespace{colorscale.cxx}']]],
+  ['getdirtyrows_1',['getDirtyRows',['../classanonymous__namespace_02column_8cxx_03_1_1_recalc_on_ref_move_collector.html#a72b2b427dd07f1c6b48d63b0be60177e',1,'anonymous_namespace{column.cxx}::RecalcOnRefMoveCollector']]],
+  ['gethexdigit_2',['getHexDigit',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#a906eec6a9abf5f4280e7cd18331f7e9c',1,'anonymous_namespace{urlobj.cxx}']]],
+  ['getnameforindex_3',['getNameForIndex',['../classsc_1_1anonymous__namespace_02_pivot_table_format_output_8cxx_03_1_1_name_resolver.html#a6332bdbadbe0e724098ef94d198ea994',1,'sc::anonymous_namespace{PivotTableFormatOutput.cxx}::NameResolver']]],
+  ['getpercentile_4',['GetPercentile',['../namespaceanonymous__namespace_02colorscale_8cxx_03.html#aa16b9ebecf45b6b56f0ca3eb6437eec0',1,'anonymous_namespace{colorscale.cxx}']]],
+  ['guessfsysstylebycounting_5',['guessFSysStyleByCounting',['../namespaceanonymous__namespace_02urlobj_8cxx_03.html#af709db7ad3455edf67497be5dbb0917e',1,'anonymous_namespace{urlobj.cxx}']]]
 ];

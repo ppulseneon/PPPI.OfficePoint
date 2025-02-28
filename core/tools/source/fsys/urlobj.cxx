@@ -304,16 +304,30 @@ struct INetURLObject::SchemeInfo
     bool m_bQuery;
 };
 
+/**
+ * @brief Структура, описывающая информацию о префиксе URL.
+ *
+ * Содержит данные, связанные с префиксом URL, такие как сам префикс,
+ * его переведенная версия, протокол и тип префикса. Используется
+ * для обработки и классификации URL-адресов.
+ */
 struct INetURLObject::PrefixInfo
 {
-    enum class Kind { Official, Internal, External }; // order is important!
+    /**
+     * @brief Тип префикса URL.
+     *
+     * Определяет категорию префикса. Порядок значений важен:
+     * - Official: Официальный префикс (стандартный протокол).
+     * - Internal: Внутренний префикс (используется внутри приложения).
+     * - External: Внешний префикс (не относится к стандартным протоколам).
+     */
+    enum class Kind { Official, Internal, External };
 
-    OUString     m_aPrefix;
-    OUString     m_aTranslatedPrefix;
-    INetProtocol m_eScheme;
-    Kind         m_eKind;
+    OUString m_aPrefix; ///< Префикс URL (например, "http://", "file://").
+    OUString m_aTranslatedPrefix; ///< Переведенная версия префикса (локализованная строка).
+    INetProtocol m_eScheme; ///< Протокол, связанный с префиксом (например, INET_PROT_HTTP).
+    Kind m_eKind; ///< Тип префикса (Official, Internal или External).
 };
-
 // static
 inline INetURLObject::SchemeInfo const &
 INetURLObject::getSchemeInfo(INetProtocol eTheScheme)

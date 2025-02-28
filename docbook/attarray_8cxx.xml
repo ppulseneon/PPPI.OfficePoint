@@ -6,8 +6,12 @@
     <title>Функции    </title>
         <itemizedlist>
             <listitem><para>static void <link linkend="_attarray_8cxx_1a3b87dd3d6c27ef4201a5d6b3be6040e0">SetLineColor</link> (SvxBorderLine const *dest, Color c)</para>
+
+<para>Установка цвета линии границы. </para>
 </listitem>
             <listitem><para>static void <link linkend="_attarray_8cxx_1a526d3efa39ef0dbd3c2c21d6521b1de0">SetLine</link> (const SvxBorderLine *dest, const SvxBorderLine *src)</para>
+
+<para>Копирование свойств линии границы. </para>
 </listitem>
             <listitem><para>static void <link linkend="_attarray_8cxx_1a992b0c42e15d7468739a58bbc07f519d">lcl_MergeDeep</link> (SfxItemSet &amp;rMergeSet, const SfxItemSet &amp;rSource)</para>
 </listitem>
@@ -45,12 +49,78 @@
     <title>SetLine()</title>
 <indexterm><primary>SetLine</primary><secondary>attarray.cxx</secondary></indexterm>
 <indexterm><primary>attarray.cxx</primary><secondary>SetLine</secondary></indexterm>
-<para><computeroutput>static void SetLine (const SvxBorderLine * dest, const SvxBorderLine * src)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>static void SetLine (const SvxBorderLine * dest, const SvxBorderLine * src)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Копирование свойств линии границы. </para>
+</para>
+
+<para>Копирует стиль и ширину линии из одного объекта SvxBorderLine в другой, если целевой объект существует. Используется для синхронизации свойств линий границ.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dest</entry><entry>
+<para>Указатель на целевой объект SvxBorderLine (может быть nullptr). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>src</entry><entry>
+<para>Указатель на исходный объект SvxBorderLine, откуда копируются свойства. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
 <anchor xml:id="_attarray_8cxx_1a3b87dd3d6c27ef4201a5d6b3be6040e0"/><section>
     <title>SetLineColor()</title>
 <indexterm><primary>SetLineColor</primary><secondary>attarray.cxx</secondary></indexterm>
 <indexterm><primary>attarray.cxx</primary><secondary>SetLineColor</secondary></indexterm>
-<para><computeroutput>static void SetLineColor (SvxBorderLine const * dest, Color c)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para><computeroutput>static void SetLineColor (SvxBorderLine const * dest, Color c)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Установка цвета линии границы. </para>
+</para>
+
+<para>Устанавливает цвет для объекта SvxBorderLine, если он существует. Используется для изменения цвета линии без создания нового объекта.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dest</entry><entry>
+<para>Указатель на целевой объект SvxBorderLine (может быть nullptr). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>c</entry><entry>
+<para>Цвет, который нужно установить для линии. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
 </section>
 <section>
 <title>Переменные</title>

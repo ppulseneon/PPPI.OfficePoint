@@ -2,4 +2,80 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_colorscale_8cxx" xml:lang="ru">
 <title>Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/colorscale.cxx</title>
 <indexterm><primary>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/colorscale.cxx</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &lt;memory&gt;<?linebreak?>#include &lt;colorscale.hxx&gt;<?linebreak?>#include &lt;document.hxx&gt;<?linebreak?>#include &lt;formulacell.hxx&gt;<?linebreak?>#include &lt;fillinfo.hxx&gt;<?linebreak?>#include &lt;bitmaps.hlst&gt;<?linebreak?>#include &lt;tokenarray.hxx&gt;<?linebreak?>#include &lt;refupdatecontext.hxx&gt;<?linebreak?>#include &lt;refdata.hxx&gt;<?linebreak?>#include &lt;editeng/fhgtitem.hxx&gt;<?linebreak?>#include &lt;scitems.hxx&gt;<?linebreak?>#include &lt;formula/token.hxx&gt;<?linebreak?>#include &lt;vcl/bitmapex.hxx&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;cassert&gt;<?linebreak?></programlisting></section>
+<programlisting linenumbering="unnumbered">#include &lt;memory&gt;<?linebreak?>#include &lt;colorscale.hxx&gt;<?linebreak?>#include &lt;document.hxx&gt;<?linebreak?>#include &lt;formulacell.hxx&gt;<?linebreak?>#include &lt;fillinfo.hxx&gt;<?linebreak?>#include &lt;bitmaps.hlst&gt;<?linebreak?>#include &lt;tokenarray.hxx&gt;<?linebreak?>#include &lt;refupdatecontext.hxx&gt;<?linebreak?>#include &lt;refdata.hxx&gt;<?linebreak?>#include &lt;editeng/fhgtitem.hxx&gt;<?linebreak?>#include &lt;scitems.hxx&gt;<?linebreak?>#include &lt;formula/token.hxx&gt;<?linebreak?>#include &lt;vcl/bitmapex.hxx&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;cassert&gt;<?linebreak?></programlisting><simplesect>
+    <title>Классы    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structanonymous__namespace_02colorscale_8cxx_03_1_1_sc_icon_set_bitmap_map">anonymous_namespace{colorscale.cxx}::ScIconSetBitmapMap</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03">anonymous_namespace{colorscale.cxx}</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>sal_uInt8 <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1ab6e3fecabd4de6c5af3d573e6cc1cc73">anonymous_namespace{colorscale.cxx}::GetColorValue</link> (double nVal, double nVal1, sal_uInt8 nColVal1, double nVal2, sal_uInt8 nColVal2)</para>
+</listitem>
+            <listitem><para>Color <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a513ba00e8c6f18157d1bd8f76f099e9f">anonymous_namespace{colorscale.cxx}::CalcColor</link> (double nVal, double nVal1, const Color &amp;rCol1, double nVal2, const Color &amp;rCol2)</para>
+</listitem>
+            <listitem><para>double <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1aa16b9ebecf45b6b56f0ca3eb6437eec0">anonymous_namespace{colorscale.cxx}::GetPercentile</link> (const std::vector&lt; double &gt; &amp;rArray, double fPercentile)</para>
+</listitem>
+            <listitem><para>const ScIconSetMap * <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a973fb2b35528b5a5d42e339c6795f978">anonymous_namespace{colorscale.cxx}::findIconSetType</link> (ScIconSetType eType)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Переменные    </title>
+        <itemizedlist>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a4f5e84b91261c6e3a2285655a8f0474b">anonymous_namespace{colorscale.cxx}::a3TrafficLights1</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a9667c3c4e625545ade30b78aa19fbb1f">anonymous_namespace{colorscale.cxx}::a3TrafficLights2</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a0636db08b5c58bcf00650bb00604ce9a">anonymous_namespace{colorscale.cxx}::a3Arrows</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a37d1bacd0009f0a4167413c03ca76489">anonymous_namespace{colorscale.cxx}::a3ArrowsGray</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a66fc74728fb2b06660a6323a5a51b2b7">anonymous_namespace{colorscale.cxx}::a3Flags</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a2b56e2607ff2c75b3c5641c805ebafa4">anonymous_namespace{colorscale.cxx}::a3Smilies</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a4035f76e8c6e0f6ed6cd02872c6b94ac">anonymous_namespace{colorscale.cxx}::a3ColorSmilies</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a7201f0b0ff6b74398f665e9612720440">anonymous_namespace{colorscale.cxx}::a3Stars</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a5e4d19647493df6382fb13c67562da4d">anonymous_namespace{colorscale.cxx}::a3Triangles</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1ac4f07b78e2633f3be823dae87d07a1ec">anonymous_namespace{colorscale.cxx}::a4Arrows</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1ac43bc554d2e914b6d68bde01b04e00f5">anonymous_namespace{colorscale.cxx}::a4ArrowsGray</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a18d9d78bcff7561d6e4eb987a9b0d694">anonymous_namespace{colorscale.cxx}::a5Arrows</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a7efba0229d099d2abed9681a02a3fb28">anonymous_namespace{colorscale.cxx}::a5ArrowsGray</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a22a8a1fe6012ca08e574fcc645791027">anonymous_namespace{colorscale.cxx}::a4TrafficLights</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a1dabb21ceba8d17fc4acdf5420278ad2">anonymous_namespace{colorscale.cxx}::a5Quarters</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a30c2ebeef4971c05e40ef64588d45306">anonymous_namespace{colorscale.cxx}::a5Boxes</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1aeed5e9834ac30983adb97b761ad0614a">anonymous_namespace{colorscale.cxx}::a3Symbols1</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1aecbc223cfda07c323491df883b4b0488">anonymous_namespace{colorscale.cxx}::a3Signs</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1aeca36495572b4a94728f7abcb0ae84e0">anonymous_namespace{colorscale.cxx}::a4RedToBlack</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1ae2f9fe819502911a9ec75ad8d4144244">anonymous_namespace{colorscale.cxx}::a4Ratings</link> []</para>
+</listitem>
+            <listitem><para>constexpr OUString <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1abd88161f06b8e6601f7c43aceda5ae04">anonymous_namespace{colorscale.cxx}::a5Ratings</link> []</para>
+</listitem>
+            <listitem><para>const <link linkend="_structanonymous__namespace_02colorscale_8cxx_03_1_1_sc_icon_set_bitmap_map">ScIconSetBitmapMap</link> <link linkend="_namespaceanonymous__namespace_02colorscale_8cxx_03_1a4dd72bea7b1b1415f23dedf9ac62f1dd">anonymous_namespace{colorscale.cxx}::aBitmapMap</link> []</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

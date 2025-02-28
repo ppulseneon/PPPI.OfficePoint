@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info" xml:lang="ru">
 <title>Структура INetURLObject::PrefixInfo</title>
 <indexterm><primary>INetURLObject::PrefixInfo</primary></indexterm>
+<para>
+
+<para>Структура, описывающая информацию о префиксе URL. </para>
+ 
+</para>
 <simplesect>
     <title>Открытые типы    </title>
         <itemizedlist>
@@ -9,6 +14,8 @@
 , <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1aafbf0897a5a83fdd873dfb032ec695d3">Internal</link>
 , <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1ab206a1b4ea1097761f78e8876f6da779">External</link>
  }</para>
+
+<para>Тип префикса URL. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -16,22 +23,53 @@
     <title>Открытые атрибуты    </title>
         <itemizedlist>
             <listitem><para>OUString <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a6e25cb60fd504dea3325e2791f872fbb">m_aPrefix</link></para>
+
+<para>Префикс URL (например, &quot;http://&quot;, &quot;file://&quot;). </para>
 </listitem>
             <listitem><para>OUString <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1ae5be9fd7b16749c9d5e197552a853874">m_aTranslatedPrefix</link></para>
+
+<para>Переведенная версия префикса (локализованная строка). </para>
 </listitem>
             <listitem><para>INetProtocol <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a8d78168f53a9d0a0e0efa28c6cdc5da0">m_eScheme</link></para>
+
+<para>Протокол, связанный с префиксом (например, INET_PROT_HTTP). </para>
 </listitem>
             <listitem><para><link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">Kind</link> <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a0ba9073e61d91cc4b2dfc11108c517f8">m_eKind</link></para>
+
+<para>Тип префикса (Official, Internal или External). </para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Структура, описывающая информацию о префиксе URL. </para>
+
+
+
+<para>Содержит данные, связанные с префиксом URL, такие как сам префикс, его переведенная версия, протокол и тип префикса. Используется для обработки и классификации URL-адресов. </para>
+</section>
 <section>
 <title>Перечисления</title>
 <anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1"/><section>
     <title>Kind</title>
 <indexterm><primary>Kind</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
 <indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>Kind</secondary></indexterm>
-<para><computeroutput>enum class <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">INetURLObject::PrefixInfo::Kind</link><computeroutput>[strong]</computeroutput></computeroutput></para><informaltable frame="all">
+<para><computeroutput>enum class <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">INetURLObject::PrefixInfo::Kind</link><computeroutput>[strong]</computeroutput></computeroutput></para><para>
+
+<para>Тип префикса URL. </para>
+</para>
+
+<para>Определяет категорию префикса. Порядок значений важен:<itemizedlist>
+<listitem>
+<para>Official: Официальный префикс (стандартный протокол).</para>
+</listitem><listitem>
+<para>Internal: Внутренний префикс (используется внутри приложения).</para>
+</listitem><listitem>
+<para>External: Внешний префикс (не относится к стандартным протоколам). </para>
+</listitem></itemizedlist>
+</para>
+<informaltable frame="all">
 <title>Элементы перечислений</title>
     <tgroup cols="2" align="left" colsep="1" rowsep="1">
       <colspec colname='c1'/>
@@ -54,22 +92,38 @@
     <title>m_aPrefix</title>
 <indexterm><primary>m_aPrefix</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
 <indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>m_aPrefix</secondary></indexterm>
-<para><computeroutput>OUString INetURLObject::PrefixInfo::m_aPrefix</computeroutput></para></section>
+<para><computeroutput>OUString INetURLObject::PrefixInfo::m_aPrefix</computeroutput></para><para>
+
+<para>Префикс URL (например, &quot;http://&quot;, &quot;file://&quot;). </para>
+</para>
+</section>
 <anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1ae5be9fd7b16749c9d5e197552a853874"/><section>
     <title>m_aTranslatedPrefix</title>
 <indexterm><primary>m_aTranslatedPrefix</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
 <indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>m_aTranslatedPrefix</secondary></indexterm>
-<para><computeroutput>OUString INetURLObject::PrefixInfo::m_aTranslatedPrefix</computeroutput></para></section>
+<para><computeroutput>OUString INetURLObject::PrefixInfo::m_aTranslatedPrefix</computeroutput></para><para>
+
+<para>Переведенная версия префикса (локализованная строка). </para>
+</para>
+</section>
 <anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a0ba9073e61d91cc4b2dfc11108c517f8"/><section>
     <title>m_eKind</title>
 <indexterm><primary>m_eKind</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
 <indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>m_eKind</secondary></indexterm>
-<para><computeroutput><link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">Kind</link> INetURLObject::PrefixInfo::m_eKind</computeroutput></para></section>
+<para><computeroutput><link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">Kind</link> INetURLObject::PrefixInfo::m_eKind</computeroutput></para><para>
+
+<para>Тип префикса (Official, Internal или External). </para>
+</para>
+</section>
 <anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a8d78168f53a9d0a0e0efa28c6cdc5da0"/><section>
     <title>m_eScheme</title>
 <indexterm><primary>m_eScheme</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
 <indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>m_eScheme</secondary></indexterm>
-<para><computeroutput>INetProtocol INetURLObject::PrefixInfo::m_eScheme</computeroutput></para></section>
+<para><computeroutput>INetProtocol INetURLObject::PrefixInfo::m_eScheme</computeroutput></para><para>
+
+<para>Протокол, связанный с префиксом (например, INET_PROT_HTTP). </para>
+</para>
+</section>
 <para>
 Объявления и описания членов структуры находятся в файле:</para>
 source/fsys/<link linkend="_urlobj_8cxx">urlobj.cxx</link></section>
