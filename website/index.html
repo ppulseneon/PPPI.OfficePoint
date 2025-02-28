@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru" style="height: 100%">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OfficePoint</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333333;
+      height: max-content;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8f9fa;
+      padding: 10px 20px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar .brand {
+      color: #28a745;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar .links a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 16px;
+    }
+
+    .navbar .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      height: 100%;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333333;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .sidebar ul li a:hover {
+      color: #007bff;
+    }
+
+    .sidebar ul li ul {
+      margin-left: 20px;
+    }
+
+    .sidebar ul li ul li a {
+      font-size: 14px;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .main-content h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .main-content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="brand">OfficePoint</div>
+    <div class="links">
+      <a href="https://github.com/ppulseneon/PPPI.OfficePoint">Github</a>
+      <a href="./html/index.html">API Source</a>
+      <a href="help.chm">Пользовательская инструкция</a>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <ul>
+        <li><a onclick="showPage('home')">Главная</a></li>
+        <li>Функции
+          <ul>
+            <li></li>
+            <li><a onclick="showPage('ui')">Пользовательский интерфейс</a></li>
+            <li><a onclick="showPage('slides')">Работа со слайдами</a></li>
+            <li><a onclick="showPage('styles')">Настройка стилей</a></li>
+            <li><a onclick="showPage('export')">Экспорт и импорт</a></li>
+            <li><a onclick="showPage('notes')">Заметки</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="content">
+      <h1>Введение</h1>
+      <p>
+        OfficePoint — это инновационное приложение для создания и демонстрации презентаций, которое сочетает в себе простоту использования и мощные функциональные возможности. Данное руководство предназначено для пользователей, разработчиков и администраторов системы. Оно охватывает все основные модули приложения, их использование и взаимодействие.
+      </p>
+      <p>OfficePoint — это новый проект, который поможет создавать и показывать презентации легко и удобно. Мы хотим сделать такое приложение, где всё будет понятно с первого взгляда, но при этом оно сможет удовлетворить даже самых требовательных пользователей.</p>
+      <p>
+        На этом сайте описана пользовательская инструкция по пользованию OfficePoint. 
+      </p>
+      <img
+              src="https://private-user-images.githubusercontent.com/159879758/414023100-fb9745c3-1858-4a17-b7f6-49197cd1e178.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA3ODM0MzksIm5iZiI6MTc0MDc4MzEzOSwicGF0aCI6Ii8xNTk4Nzk3NTgvNDE0MDIzMTAwLWZiOTc0NWMzLTE4NTgtNGExNy1iN2Y2LTQ5MTk3Y2QxZTE3OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyOFQyMjUyMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNTM2NDZjYzMwZTY4NmZhZTc1OWJkNTEzZDZkOTJlZDVlNjAyNDk3MzVmZjRlNmQ4ODRmNWEyMWQwODkwNGY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.KlgGowMgwnjfAJvGSEKojVInffQv-qFP-JUn2CrBJe0"
+              alt="Описание изображения"
+              style="max-width: 100%; height: auto; display: block; margin: 20px auto;"
+      >
+    </div>
+  </div>
+
+  <script>
+    const pages = {
+      home: `
+        <h1>Введение</h1>
+      <p>
+        OfficePoint — это инновационное приложение для создания и демонстрации презентаций, которое сочетает в себе простоту использования и мощные функциональные возможности. Данное руководство предназначено для пользователей, разработчиков и администраторов системы. Оно охватывает все основные модули приложения, их использование и взаимодействие.
+      </p>
+      <p>OfficePoint — это новый проект, который поможет создавать и показывать презентации легко и удобно. Мы хотим сделать такое приложение, где всё будет понятно с первого взгляда, но при этом оно сможет удовлетворить даже самых требовательных пользователей.</p>
+      <p>
+        На этом сайте описана пользовательская инструкция по пользованию OfficePoint. 
+      </p>
+      <img
+              src="https://private-user-images.githubusercontent.com/159879758/414023100-fb9745c3-1858-4a17-b7f6-49197cd1e178.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA3ODM0MzksIm5iZiI6MTc0MDc4MzEzOSwicGF0aCI6Ii8xNTk4Nzk3NTgvNDE0MDIzMTAwLWZiOTc0NWMzLTE4NTgtNGExNy1iN2Y2LTQ5MTk3Y2QxZTE3OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyOFQyMjUyMTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jNTM2NDZjYzMwZTY4NmZhZTc1OWJkNTEzZDZkOTJlZDVlNjAyNDk3MzVmZjRlNmQ4ODRmNWEyMWQwODkwNGY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.KlgGowMgwnjfAJvGSEKojVInffQv-qFP-JUn2CrBJe0"
+              alt="Описание изображения"
+              style="max-width: 100%; height: auto; display: block; margin: 20px auto;"
+      >
+      `,
+      ui: `<h1>Пользовательский интерфейс</h1>
+            <p>Главным и основным модулем приложения является - панель управления .</p>
+            <p><b>Как использовать:</b><br><br>
+            Найдите панель быстрого доступа в верхней части экрана. Она содержит основные команды, такие как "Сохранить", "Отменить" и "Повторить".
+            </p>
+            <P>Для переключения между режимами просмотра (обычный, структура, сортировщик 
+            слайдов) используйте кнопки в правом нижнем углу окна. </P>
+            <P>При изменении размера окна программа автоматически адаптирует интерфейс под 
+            ваше устройство.</P>
+            <img
+              src="https://elearn.dev.ellak.gr/pluginfile.php/4102/mod_page/content/10/impress-main-window.png"
+              alt="Описание изображения"
+              style="max-width: 100%; height: auto; display: block; margin: 20px auto;"
+              >
+            `,
+      slides: `<h1>Работа со слайдами</h1>
+          <P><STRONG>OfficePoint</STRONG> предоставляет широкий набор 
+          инструментов для создания профессиональных презентаций. В этом разделе вы 
+          узнаете, как эффективно работать со слайдами и их содержимым: от добавления и 
+          редактирования слайдов до настройки текста, графических элементов и переходов. 
+          Каждый шаг описан максимально подробно, чтобы помочь вам быстро освоить все возможности программы.</P>
+          <P><IMG alt="" 
+          src="https://books.libreoffice.org/en/GS75/GS7506-GettingStartedWithImpress-img/GS7506-GettingStartedWithImpress-img003.png"></P>
+          <H2>Создание и редактирование слайдов</H2>
+          <P><STRONG>Как использовать</STRONG>:</P>
+          <P>1. Чтобы добавить новый слайд, нажмите кнопку "Добавить слайд" на панели 
+          инструментов.</P>
+          <P>2. Выберите макет слайда из предложенных вариантов в боковой панели.</P>
+          <P>3. Для дублирования или удаления слайда щелкните правой кнопкой мыши на 
+          миниатюре слайда и выберите соответствующую опцию.</P>
+          <P>           
+               &nbsp;</P>
+          <H2>Работа с текстом</H2>
+          <P><STRONG>Как использовать:</STRONG> </P>
+          <P>1. Выделите текст и используйте панель форматирования 
+          для изменения шрифта, размера и цвета.</P>
+          <P>2. Настройте выравнивание текста (по левому краю, по 
+          центру, по правому краю) через кнопки на панели инструментов.</P>
+          <P>3. Добавьте маркированные или нумерованные списки с 
+          помощью специальных кнопок.</P>
+          <P>&nbsp;</P>
+          <H2>Вставка графических элементов</H2>
+          <P><STRONG>Как использовать:</STRONG> </P>
+          <P>1. Нажмите кнопку "Вставить изображение" и выберите файл 
+          с вашего компьютера или из облачного хранилища.</P>
+          <P>2. Используйте панель "Графика" для добавления фигур и 
+          линий.</P>
+          <P>3. Настройте прозрачность и эффекты объекта через 
+          контекстное меню.</P>
+          <P>&nbsp;</P>
+          <H2>Переходы между слайдами</H2>
+          <P><STRONG>Как использовать:</STRONG>  </P>
+          <P>1. Откройте панель "Переходы" и выберите эффект перехода.</P>
+          <P>2. Настройте скорость и добавьте звуковые эффекты через свойства 
+          перехода.</P>
+          <P>3. Включите автоматическое переключение слайдов в параметрах показа 
+          презентации.</P>`,
+      styles: `<h1>Настройка стилей</h1><P>Одним из ключевых аспектов создания профессиональной 
+презентации является её визуальное оформление.</P>
+<P>В OfficePoint вы можете легко настроить внешний вид 
+слайдов, используя готовые темы или создавая собственные стили.</P>
+<P><STRONG>Как использовать</STRONG> : </P>
+<P>1. Перейдите на панель "Темы" и выберите готовую тему.</P>
+<P>2. Создайте пользовательскую тему через кнопку "Создать тему".</P>
+<P>3. Примените стиль ко всем слайдам через параметры темы.</P>
+<P>        &nbsp;</P>
+<P>        Следуя этим шагам, вы сможете быстро и эффективно 
+настроить внешний вид своей презентации, сделав её стильным и гармоничным 
+дополнением к вашему        контенту.</P>`,
+      export: `<h1>Экспорт и импорт</h1><P>OfficePoint предоставляет удобные инструменты для 
+экспорта и импорта презентаций, что позволяет легко делиться вашими работами или 
+использовать материалы из других источников. Независимо от того, нужно ли вам 
+сохранить презентацию в популярном формате, таком как PDF или видео, или 
+загрузить данные из сторонних приложений, эти функции помогут вам быстро и 
+эффективно выполнить задачу.</P>
+<P><STRONG>Как использовать</STRONG> :</P>
+<P>1. Выберите "Файл &gt; Экспорт" и выберите формат (PDF, видео и т.д.).</P>
+<P>2. Импортируйте файлы из сторонних приложений через "Файл &gt; Импорт".</P>
+<P>3. Настройте качество экспортируемых файлов в диалоговом окне.</P>`,
+      notes: `<h1>Заметки</h1><P>Заметки докладчика — это удобный инструмент, который 
+помогает вам подготовиться к выступлению и чувствовать себя уверенно во время 
+демонстрации презентации. Они позволяют добавить дополнительную информацию, 
+которая будет доступна только вам, не отвлекая внимание аудитории. В этом 
+разделе мы расскажем, как использовать функцию заметок для эффективной 
+подготовки и проведения презентации.</P>
+<P><STRONG>Как использовать:</STRONG></P>
+<P>1. Добавьте заметки через панель "Заметки".</P>
+<P>2. Во время показа презентации заметки будут видны только вам.</P>
+<P>3. Распечатайте заметки через меню "Файл &gt; Печать".</P>`
+    };
+
+    function showPage(page) {
+      document.getElementById('content').innerHTML = pages[page];
+    }
+  </script>
+</body>
+</html>

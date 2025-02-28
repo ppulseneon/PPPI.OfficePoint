@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OfficePoint: Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/fillinfo.cxx</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">OfficePoint<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('fillinfo_8cxx.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл fillinfo.cxx</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;scitems.hxx&gt;</code><br />
+<code>#include &lt;editeng/boxitem.hxx&gt;</code><br />
+<code>#include &lt;editeng/lineitem.hxx&gt;</code><br />
+<code>#include &lt;editeng/shaditem.hxx&gt;</code><br />
+<code>#include &lt;editeng/brushitem.hxx&gt;</code><br />
+<code>#include &lt;svx/framelink.hxx&gt;</code><br />
+<code>#include &lt;osl/diagnose.h&gt;</code><br />
+<code>#include &lt;fillinfo.hxx&gt;</code><br />
+<code>#include &lt;document.hxx&gt;</code><br />
+<code>#include &lt;table.hxx&gt;</code><br />
+<code>#include &lt;attrib.hxx&gt;</code><br />
+<code>#include &lt;attarray.hxx&gt;</code><br />
+<code>#include &lt;markarr.hxx&gt;</code><br />
+<code>#include &lt;markdata.hxx&gt;</code><br />
+<code>#include &lt;patattr.hxx&gt;</code><br />
+<code>#include &lt;poolhelp.hxx&gt;</code><br />
+<code>#include &lt;docpool.hxx&gt;</code><br />
+<code>#include &lt;conditio.hxx&gt;</code><br />
+<code>#include &lt;stlpool.hxx&gt;</code><br />
+<code>#include &lt;cellvalue.hxx&gt;</code><br />
+<code>#include &lt;mtvcellfunc.hxx&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02fillinfo_8cxx_03_1_1_row_info_filler.html">anonymous_namespace{fillinfo.cxx}::RowInfoFiller</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02fillinfo_8cxx_03.html">anonymous_namespace{fillinfo.cxx}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ae1fd7743819a21e7f113a2bd5fca5a29" id="r_ae1fd7743819a21e7f113a2bd5fca5a29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1fd7743819a21e7f113a2bd5fca5a29">lcl_GetMergeRange</a> (SCCOL nX, SCROW nY, SCSIZE nArrY, const ScDocument *pDoc, RowInfo *pRowInfo, SCCOL nX1, SCROW nY1, SCTAB nTab, SCCOL &amp;rStartX, SCROW &amp;rStartY, SCCOL &amp;rEndX, SCROW &amp;rEndY)</td></tr>
+<tr class="separator:ae1fd7743819a21e7f113a2bd5fca5a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae350f5c1300fb1ffaa5ff616260ca425" id="r_ae350f5c1300fb1ffaa5ff616260ca425"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02fillinfo_8cxx_03.html#ae350f5c1300fb1ffaa5ff616260ca425">anonymous_namespace{fillinfo.cxx}::isRotateItemUsed</a> (const ScDocumentPool *pPool)</td></tr>
+<tr class="separator:ae350f5c1300fb1ffaa5ff616260ca425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4271523843acc0cdbb0ba16441b76c4b" id="r_a4271523843acc0cdbb0ba16441b76c4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02fillinfo_8cxx_03.html#a4271523843acc0cdbb0ba16441b76c4b">anonymous_namespace{fillinfo.cxx}::initRowInfo</a> (const ScDocument *pDoc, RowInfo *pRowInfo, const SCSIZE nMaxRow, double fRowScale, SCROW nRow1, SCTAB nTab, SCROW &amp;rYExtra, SCSIZE &amp;rArrRow, SCROW &amp;rRow2)</td></tr>
+<tr class="separator:a4271523843acc0cdbb0ba16441b76c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228b8598a99f5bb599d19d8a9981ef24" id="r_a228b8598a99f5bb599d19d8a9981ef24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02fillinfo_8cxx_03.html#a228b8598a99f5bb599d19d8a9981ef24">anonymous_namespace{fillinfo.cxx}::initCellInfo</a> (RowInfo *pRowInfo, SCSIZE nArrCount, SCCOL nStartCol, SCCOL nRotMax, const SvxShadowItem *pDefShadow)</td></tr>
+<tr class="separator:a228b8598a99f5bb599d19d8a9981ef24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be83c61f1d00a7e502d7849c88ae212" id="r_a2be83c61f1d00a7e502d7849c88ae212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02fillinfo_8cxx_03.html#a2be83c61f1d00a7e502d7849c88ae212">anonymous_namespace{fillinfo.cxx}::initColWidths</a> (RowInfo *pRowInfo, const ScDocument *pDoc, double fColScale, SCTAB nTab, SCCOL nCol2, SCCOL nRotMax)</td></tr>
+<tr class="separator:a2be83c61f1d00a7e502d7849c88ae212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1674c21ae59be533cb7d0ce4d00ea388" id="r_a1674c21ae59be533cb7d0ce4d00ea388"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02fillinfo_8cxx_03.html#a1674c21ae59be533cb7d0ce4d00ea388">anonymous_namespace{fillinfo.cxx}::handleConditionalFormat</a> (ScConditionalFormatList &amp;rCondFormList, const ScCondFormatIndexes &amp;rCondFormats, ScCellInfo *pInfo, ScTableInfo *pTableInfo, ScStyleSheetPool *pStlPool, const ScAddress &amp;rAddr, bool &amp;bHidden, bool &amp;bHideFormula, bool bTabProtect)</td></tr>
+<tr class="separator:a1674c21ae59be533cb7d0ce4d00ea388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="ae1fd7743819a21e7f113a2bd5fca5a29" name="ae1fd7743819a21e7f113a2bd5fca5a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1fd7743819a21e7f113a2bd5fca5a29">&#9670;&#160;</a></span>lcl_GetMergeRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void lcl_GetMergeRange </td>
+          <td>(</td>
+          <td class="paramtype">SCCOL</td>          <td class="paramname"><span class="paramname"><em>nX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCROW</td>          <td class="paramname"><span class="paramname"><em>nY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCSIZE</td>          <td class="paramname"><span class="paramname"><em>nArrY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ScDocument *</td>          <td class="paramname"><span class="paramname"><em>pDoc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RowInfo *</td>          <td class="paramname"><span class="paramname"><em>pRowInfo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCCOL</td>          <td class="paramname"><span class="paramname"><em>nX1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCROW</td>          <td class="paramname"><span class="paramname"><em>nY1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCTAB</td>          <td class="paramname"><span class="paramname"><em>nTab</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCCOL &amp;</td>          <td class="paramname"><span class="paramname"><em>rStartX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCROW &amp;</td>          <td class="paramname"><span class="paramname"><em>rStartY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCCOL &amp;</td>          <td class="paramname"><span class="paramname"><em>rEndX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCROW &amp;</td>          <td class="paramname"><span class="paramname"><em>rEndY</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_0d27ce74e9bd514c31e1d63efab6b388.html">core</a></li><li class="navelem"><a class="el" href="dir_db113c0609e6f10711d3ba1b83510b30.html">data</a></li><li class="navelem"><a class="el" href="fillinfo_8cxx.html">fillinfo.cxx</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
