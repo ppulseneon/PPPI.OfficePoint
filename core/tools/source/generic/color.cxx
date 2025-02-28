@@ -32,6 +32,15 @@
 #include <basegfx/color/bcolortools.hxx>
 #include <basegfx/numeric/ftools.hxx>
 
+/**
+ * @brief Нормализация значения RGB согласно формуле sRGB.
+ *
+ * Преобразует значение RGB в линейное пространство цветов.
+ * Используется для расчета относительной яркости.
+ *
+ * @param nValue Значение RGB в диапазоне [0.0, 1.0]
+ * @return double Нормализованное значение RGB
+ */
 static inline double NormalizeRGB(double nValue)
 {
     if (nValue < 0.04045)
@@ -40,6 +49,14 @@ static inline double NormalizeRGB(double nValue)
         return pow((nValue+0.055)/1.055, 2.4);
 }
 
+/**
+ * @brief Получение WCAG-совместимой яркости цвета.
+ *
+ * Рассчитывает относительную яркость цвета согласно спецификации WCAG 2.1.
+ * https://www.w3.org/TR/WCAG21/#dfn-relative-luminance
+ *
+ * @return sal_uInt8 Яркость цвета в диапазоне [0, 255]
+ */
 sal_uInt8 Color::GetWCAGLuminance() const
 {
     // https://www.w3.org/TR/WCAG21/#dfn-relative-luminance
@@ -49,6 +66,14 @@ sal_uInt8 Color::GetWCAGLuminance() const
     return (nRed * 0.2126 + nGreen * 0.7152 + nBlue * 0.0722) * 255UL;
 }
 
+/**
+ * @brief Проверка, является ли цвет темным.
+ *
+ * Определяет, считается ли цвет темным на основе его яркости.
+ * Учитывает специальный случай для цвета по умолчанию (COL_DEFAULT_SHAPE_FILLING).
+ *
+ * @return bool true если цвет темный, иначе false
+ */
 bool Color::IsDark() const
 {
     if (mValue == 0x729fcf) // COL_DEFAULT_SHAPE_FILLING
@@ -57,10 +82,17 @@ bool Color::IsDark() const
         return GetWCAGLuminance() <= 87;
 }
 
+/**
+ * @brief Увеличение яркости цвета.
+ *
+ * Увеличивает значение каждого канала RGB на указанную величину,
+ * с ограничением в диапазоне [0, 255].
+ *
+ * @param cLumInc Величина увеличения яркости
+ */
 bool Color::IsBright() const
 {
     return !IsDark();
-//    return GetLuminance() >= 245;
 }
 
 void Color::IncreaseLuminance(sal_uInt8 cLumInc)
@@ -92,6 +124,16 @@ void Color::DecreaseContrast(sal_uInt8 nContDec)
 
 // color space conversion
 
+/**
+ * @brief Конвертация RGB в HSB.
+ *
+ * Преобразует цвет из RGB пространства в HSB (Hue, Saturation, Brightness).
+ * Все выходные значения нормализованы к диапазону [0, 100].
+ *
+ * @param[out] nHue Тон (Hue)
+ * @param[out] nSat Насыщенность (Saturation)
+ * @param[out] nBri Яркость (Brightness)
+ */
 void Color::RGBtoHSB( sal_uInt16& nHue, sal_uInt16& nSat, sal_uInt16& nBri ) const
 {
     sal_uInt8 c[3];
@@ -151,6 +193,16 @@ void Color::RGBtoHSB( sal_uInt16& nHue, sal_uInt16& nSat, sal_uInt16& nBri ) con
     }
 }
 
+/**
+ * @brief Конвертация HSB в RGB.
+ *
+ * Преобразует цвет из HSB пространства в RGB.
+ *
+ * @param nHue Тон (Hue) в диапазоне [0, 360]
+ * @param nSat Насыщенность (Saturation) в диапазоне [0, 100]
+ * @param nBri Яркость (Brightness) в диапазоне [0, 100]
+ * @return Color Цвет в RGB формате
+ */
 Color Color::HSBtoRGB( sal_uInt16 nHue, sal_uInt16 nSat, sal_uInt16 nBri )
 {
     sal_uInt8 cR=0,cG=0,cB=0;
@@ -238,6 +290,14 @@ OUString Color::AsRGBHEXString() const
     return OUString::createFromAscii(ss.str());
 }
 
+/**
+ * @brief Применение оттенка или тона к цвету.
+ *
+ * Изменяет цвет, применяя оттенок (tint) или тон (shade).
+ * Положительные значения - осветление, отрицательные - затемнение.
+ *
+ * @param n100thPercent Процент изменения в сотых долях процента
+ */
 void Color::ApplyTintOrShade(sal_Int16 n100thPercent)
 {
     if (n100thPercent == 0)

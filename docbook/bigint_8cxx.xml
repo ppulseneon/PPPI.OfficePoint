@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bigint_8cxx" xml:lang="ru">
+<title>Файл source/generic/bigint.cxx</title>
+<indexterm><primary>source/generic/bigint.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;sal/config.h&gt;<?linebreak?>#include &lt;osl/diagnose.h&gt;<?linebreak?>#include &lt;tools/bigint.hxx&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;cmath&gt;<?linebreak?>#include &lt;cstring&gt;<?linebreak?>#include &lt;limits&gt;<?linebreak?>#include &lt;span&gt;<?linebreak?></programlisting><simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>static std::span&lt; sal_uInt32 &gt; <link linkend="_bigint_8cxx_1a31d56ee5aacaeac5c875892f5c85e22a">Mult</link> (std::span&lt; const sal_uInt32 &gt; aNum, sal_uInt32 nMul, std::span&lt; sal_uInt32 &gt; retBuf)</para>
+</listitem>
+            <listitem><para>static size_t <link linkend="_bigint_8cxx_1aef038944e5348a38729a089ec4a48d09">DivInPlace</link> (std::span&lt; sal_uInt32 &gt; aNum, sal_uInt32 nDiv, sal_uInt32 &amp;rRem)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_bigint_8cxx_1a4f631a44622310c5129852c700b7ffd5">operator==</link> (const BigInt &amp;rVal1, const BigInt &amp;rVal2)</para>
+</listitem>
+            <listitem><para>std::strong_ordering <link linkend="_bigint_8cxx_1afbca4f153d6c5859d71a79d1c02aadf3">operator&lt;=&gt;</link> (const BigInt &amp;rVal1, const BigInt &amp;rVal2)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Переменные    </title>
+        <itemizedlist>
+            <listitem><para>const sal_Int32 <link linkend="_bigint_8cxx_1aa535389c62b3a7ff9ff5e13be2e286aa">MY_MAXLONG</link> = 0x3fffffff</para>
+</listitem>
+            <listitem><para>const sal_Int32 <link linkend="_bigint_8cxx_1a46534073033a4004cd8d37cc84e05a80">MY_MINLONG</link> = -<link linkend="_bigint_8cxx_1aa535389c62b3a7ff9ff5e13be2e286aa">MY_MAXLONG</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Функции</title>
+<anchor xml:id="_bigint_8cxx_1aef038944e5348a38729a089ec4a48d09"/><section>
+    <title>DivInPlace()</title>
+<indexterm><primary>DivInPlace</primary><secondary>bigint.cxx</secondary></indexterm>
+<indexterm><primary>bigint.cxx</primary><secondary>DivInPlace</secondary></indexterm>
+<para><computeroutput>static size_t DivInPlace (std::span&lt; sal_uInt32 &gt; aNum, sal_uInt32 nDiv, sal_uInt32 &amp; rRem)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_bigint_8cxx_1a31d56ee5aacaeac5c875892f5c85e22a"/><section>
+    <title>Mult()</title>
+<indexterm><primary>Mult</primary><secondary>bigint.cxx</secondary></indexterm>
+<indexterm><primary>bigint.cxx</primary><secondary>Mult</secondary></indexterm>
+<para><computeroutput>static std::span&lt; sal_uInt32 &gt; Mult (std::span&lt; const sal_uInt32 &gt; aNum, sal_uInt32 nMul, std::span&lt; sal_uInt32 &gt; retBuf)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_bigint_8cxx_1afbca4f153d6c5859d71a79d1c02aadf3"/><section>
+    <title>operator&lt;=&gt;()</title>
+<indexterm><primary>operator&lt;=&gt;</primary><secondary>bigint.cxx</secondary></indexterm>
+<indexterm><primary>bigint.cxx</primary><secondary>operator&lt;=&gt;</secondary></indexterm>
+<para><computeroutput>std::strong_ordering operator&lt;=&gt; (const BigInt &amp; rVal1, const BigInt &amp; rVal2)</computeroutput></para></section>
+<anchor xml:id="_bigint_8cxx_1a4f631a44622310c5129852c700b7ffd5"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>bigint.cxx</secondary></indexterm>
+<indexterm><primary>bigint.cxx</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool operator== (const BigInt &amp; rVal1, const BigInt &amp; rVal2)</computeroutput></para></section>
+</section>
+<section>
+<title>Переменные</title>
+<anchor xml:id="_bigint_8cxx_1aa535389c62b3a7ff9ff5e13be2e286aa"/><section>
+    <title>MY_MAXLONG</title>
+<indexterm><primary>MY_MAXLONG</primary><secondary>bigint.cxx</secondary></indexterm>
+<indexterm><primary>bigint.cxx</primary><secondary>MY_MAXLONG</secondary></indexterm>
+<para><computeroutput>const sal_Int32 MY_MAXLONG = 0x3fffffff</computeroutput></para>
+<para>The range in which we can perform add/sub without fear of overflow </para>
+</section>
+<anchor xml:id="_bigint_8cxx_1a46534073033a4004cd8d37cc84e05a80"/><section>
+    <title>MY_MINLONG</title>
+<indexterm><primary>MY_MINLONG</primary><secondary>bigint.cxx</secondary></indexterm>
+<indexterm><primary>bigint.cxx</primary><secondary>MY_MINLONG</secondary></indexterm>
+<para><computeroutput>const sal_Int32 MY_MINLONG = -<link linkend="_bigint_8cxx_1aa535389c62b3a7ff9ff5e13be2e286aa">MY_MAXLONG</link></computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="ru">
+    <info>
+    <title>OfficePoint</title>
+    </info>
+<chapter>
+    <title>Пространства имен</title>
+<xi:include href="namespacecolor.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacesc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacetools.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Классы</title>
+    <xi:include href="struct_i_net_u_r_l_object_1_1_prefix_info.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="struct_i_net_u_r_l_object_1_1_scheme_info.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Файлы</title>
+    <xi:include href="attarray_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="broadcast_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="colorscale_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="column_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="fillinfo_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="global_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_pivot_table_format_output_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="fileutil_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="urlobj_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="wldcrd_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="bigint_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="color_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="fract_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="gen_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="line_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="point_8cxx.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Примеры</title>
+    <xi:include href="_reduce_inaccurate-example.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

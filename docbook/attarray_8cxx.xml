@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_attarray_8cxx" xml:lang="ru">
+<title>Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/attarray.cxx</title>
+<indexterm><primary>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/attarray.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;attarray.hxx&gt;<?linebreak?>#include &lt;scitems.hxx&gt;<?linebreak?>#include &lt;editeng/borderline.hxx&gt;<?linebreak?>#include &lt;editeng/boxitem.hxx&gt;<?linebreak?>#include &lt;editeng/lineitem.hxx&gt;<?linebreak?>#include &lt;editeng/shaditem.hxx&gt;<?linebreak?>#include &lt;editeng/editobj.hxx&gt;<?linebreak?>#include &lt;editeng/justifyitem.hxx&gt;<?linebreak?>#include &lt;osl/diagnose.h&gt;<?linebreak?>#include &lt;poolcach.hxx&gt;<?linebreak?>#include &lt;global.hxx&gt;<?linebreak?>#include &lt;document.hxx&gt;<?linebreak?>#include &lt;docpool.hxx&gt;<?linebreak?>#include &lt;docsh.hxx&gt;<?linebreak?>#include &lt;patattr.hxx&gt;<?linebreak?>#include &lt;stlsheet.hxx&gt;<?linebreak?>#include &lt;stlpool.hxx&gt;<?linebreak?>#include &lt;markarr.hxx&gt;<?linebreak?>#include &lt;globstr.hrc&gt;<?linebreak?>#include &lt;scresid.hxx&gt;<?linebreak?>#include &lt;segmenttree.hxx&gt;<?linebreak?>#include &lt;editdataarray.hxx&gt;<?linebreak?>#include &lt;cellvalue.hxx&gt;<?linebreak?>#include &lt;editutil.hxx&gt;<?linebreak?>#include &lt;mtvelements.hxx&gt;<?linebreak?>#include &lt;memory&gt;<?linebreak?></programlisting><simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_attarray_8cxx_1a3b87dd3d6c27ef4201a5d6b3be6040e0">SetLineColor</link> (SvxBorderLine const *dest, Color c)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_attarray_8cxx_1a526d3efa39ef0dbd3c2c21d6521b1de0">SetLine</link> (const SvxBorderLine *dest, const SvxBorderLine *src)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_attarray_8cxx_1a992b0c42e15d7468739a58bbc07f519d">lcl_MergeDeep</link> (SfxItemSet &amp;rMergeSet, const SfxItemSet &amp;rSource)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_attarray_8cxx_1a1ec2ad4a97bb5eccd0b66bc96a00e3ff">lcl_TestAttr</link> (const SvxBorderLine *pOldLine, const SvxBorderLine *pNewLine, sal_uInt8 &amp;rModified, const SvxBorderLine *&amp;rpNew)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_attarray_8cxx_1a6dafb9933034d3403f55bc597bd76130">lcl_MergeToFrame</link> (SvxBoxItem *pLineOuter, SvxBoxInfoItem *pLineInner, ScLineFlags &amp;rFlags, const ScPatternAttr *pPattern, bool bLeft, SCCOL nDistRight, bool bTop, SCROW nDistBottom)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Переменные    </title>
+        <itemizedlist>
+            <listitem><para>const SCROW <link linkend="_attarray_8cxx_1aeaca69a84c07b9aa2a60499fe8f2ea40">SC_VISATTR_STOP</link> = 84</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Функции</title>
+<anchor xml:id="_attarray_8cxx_1a992b0c42e15d7468739a58bbc07f519d"/><section>
+    <title>lcl_MergeDeep()</title>
+<indexterm><primary>lcl_MergeDeep</primary><secondary>attarray.cxx</secondary></indexterm>
+<indexterm><primary>attarray.cxx</primary><secondary>lcl_MergeDeep</secondary></indexterm>
+<para><computeroutput>static void lcl_MergeDeep (SfxItemSet &amp; rMergeSet, const SfxItemSet &amp; rSource)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_attarray_8cxx_1a6dafb9933034d3403f55bc597bd76130"/><section>
+    <title>lcl_MergeToFrame()</title>
+<indexterm><primary>lcl_MergeToFrame</primary><secondary>attarray.cxx</secondary></indexterm>
+<indexterm><primary>attarray.cxx</primary><secondary>lcl_MergeToFrame</secondary></indexterm>
+<para><computeroutput>static void lcl_MergeToFrame (SvxBoxItem * pLineOuter, SvxBoxInfoItem * pLineInner, ScLineFlags &amp; rFlags, const ScPatternAttr * pPattern, bool bLeft, SCCOL nDistRight, bool bTop, SCROW nDistBottom)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_attarray_8cxx_1a1ec2ad4a97bb5eccd0b66bc96a00e3ff"/><section>
+    <title>lcl_TestAttr()</title>
+<indexterm><primary>lcl_TestAttr</primary><secondary>attarray.cxx</secondary></indexterm>
+<indexterm><primary>attarray.cxx</primary><secondary>lcl_TestAttr</secondary></indexterm>
+<para><computeroutput>static bool lcl_TestAttr (const SvxBorderLine * pOldLine, const SvxBorderLine * pNewLine, sal_uInt8 &amp; rModified, const SvxBorderLine *&amp; rpNew)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_attarray_8cxx_1a526d3efa39ef0dbd3c2c21d6521b1de0"/><section>
+    <title>SetLine()</title>
+<indexterm><primary>SetLine</primary><secondary>attarray.cxx</secondary></indexterm>
+<indexterm><primary>attarray.cxx</primary><secondary>SetLine</secondary></indexterm>
+<para><computeroutput>static void SetLine (const SvxBorderLine * dest, const SvxBorderLine * src)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_attarray_8cxx_1a3b87dd3d6c27ef4201a5d6b3be6040e0"/><section>
+    <title>SetLineColor()</title>
+<indexterm><primary>SetLineColor</primary><secondary>attarray.cxx</secondary></indexterm>
+<indexterm><primary>attarray.cxx</primary><secondary>SetLineColor</secondary></indexterm>
+<para><computeroutput>static void SetLineColor (SvxBorderLine const * dest, Color c)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Переменные</title>
+<anchor xml:id="_attarray_8cxx_1aeaca69a84c07b9aa2a60499fe8f2ea40"/><section>
+    <title>SC_VISATTR_STOP</title>
+<indexterm><primary>SC_VISATTR_STOP</primary><secondary>attarray.cxx</secondary></indexterm>
+<indexterm><primary>attarray.cxx</primary><secondary>SC_VISATTR_STOP</secondary></indexterm>
+<para><computeroutput>const SCROW SC_VISATTR_STOP = 84</computeroutput></para></section>
+</section>
+</section>

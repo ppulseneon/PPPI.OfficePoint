@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__pivot_table_format_output_8cxx" xml:lang="ru">
+<title>Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/PivotTableFormatOutput.cxx</title>
+<indexterm><primary>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/PivotTableFormatOutput.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;pivot/PivotTableFormatOutput.hxx&gt;<?linebreak?>#include &lt;pivot/DPOutLevelData.hxx&gt;<?linebreak?>#include &lt;dpoutput.hxx&gt;<?linebreak?>#include &lt;dpobject.hxx&gt;<?linebreak?>#include &lt;dptabdat.hxx&gt;<?linebreak?>#include &lt;dpcache.hxx&gt;<?linebreak?>#include &lt;document.hxx&gt;<?linebreak?>#include &lt;com/sun/star/sheet/MemberResultFlags.hpp&gt;<?linebreak?></programlisting><simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacesc">sc</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

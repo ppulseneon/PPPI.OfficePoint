@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_db113c0609e6f10711d3ba1b83510b30" xml:lang="ru">
+<title>Содержание директории C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data</title>
+<indexterm><primary>Содержание директории C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data</primary></indexterm>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="_attarray_8cxx">attarray.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_broadcast_8cxx">broadcast.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_colorscale_8cxx">colorscale.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_column_8cxx">column.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_fillinfo_8cxx">fillinfo.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_global_8cxx">global.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="__pivot_table_format_output_8cxx">PivotTableFormatOutput.cxx</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

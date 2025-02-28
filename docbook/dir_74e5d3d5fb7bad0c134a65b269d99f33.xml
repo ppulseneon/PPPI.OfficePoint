@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_74e5d3d5fb7bad0c134a65b269d99f33" xml:lang="ru">
+<title>Содержание директории source/generic</title>
+<indexterm><primary>Содержание директории source/generic</primary></indexterm>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="_bigint_8cxx">bigint.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_color_8cxx">color.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_fract_8cxx">fract.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_gen_8cxx">gen.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_line_8cxx">line.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_point_8cxx">point.cxx</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

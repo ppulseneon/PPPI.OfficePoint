@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d31235a1b6c24aaa5b6024d64551bde8" xml:lang="ru">
+<title>Содержание директории source/fsys</title>
+<indexterm><primary>Содержание директории source/fsys</primary></indexterm>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="_fileutil_8cxx">fileutil.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_urlobj_8cxx">urlobj.cxx</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_wldcrd_8cxx">wldcrd.cxx</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

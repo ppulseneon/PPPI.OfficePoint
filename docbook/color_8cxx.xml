@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_color_8cxx" xml:lang="ru">
+<title>Файл source/generic/color.cxx</title>
+<indexterm><primary>source/generic/color.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;sal/config.h&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;iomanip&gt;<?linebreak?>#include &lt;sstream&gt;<?linebreak?>#include &lt;stdlib.h&gt;<?linebreak?>#include &lt;tools/color.hxx&gt;<?linebreak?>#include &lt;tools/helpers.hxx&gt;<?linebreak?>#include &lt;tools/long.hxx&gt;<?linebreak?>#include &lt;o3tl/string_view.hxx&gt;<?linebreak?>#include &lt;o3tl/numeric.hxx&gt;<?linebreak?>#include &lt;basegfx/color/bcolortools.hxx&gt;<?linebreak?>#include &lt;basegfx/numeric/ftools.hxx&gt;<?linebreak?></programlisting><simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacecolor">color</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>static double <link linkend="_color_8cxx_1af6c0a9797b73085898df485581e5606e">NormalizeRGB</link> (double nValue)</para>
+
+<para>Нормализация значения RGB согласно формуле sRGB. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacecolor_1ab51a9a12ab7bc80a8cb47b018c290313">color::createFromString</link> (OString const &amp;rString, Color &amp;rColor)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Функции</title>
+<anchor xml:id="_color_8cxx_1af6c0a9797b73085898df485581e5606e"/><section>
+    <title>NormalizeRGB()</title>
+<indexterm><primary>NormalizeRGB</primary><secondary>color.cxx</secondary></indexterm>
+<indexterm><primary>color.cxx</primary><secondary>NormalizeRGB</secondary></indexterm>
+<para><computeroutput>static double NormalizeRGB (double nValue)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Нормализация значения RGB согласно формуле sRGB. </para>
+</para>
+
+<para>Преобразует значение RGB в линейное пространство цветов. Используется для расчета относительной яркости.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>nValue</entry><entry>
+<para>Значение RGB в диапазоне [0.0, 1.0] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>double Нормализованное значение RGB </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

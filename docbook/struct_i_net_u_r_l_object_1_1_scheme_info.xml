@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info" xml:lang="ru">
+<title>Структура INetURLObject::SchemeInfo</title>
+<indexterm><primary>INetURLObject::SchemeInfo</primary></indexterm>
+<simplesect>
+    <title>Открытые атрибуты    </title>
+        <itemizedlist>
+            <listitem><para>OUString <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1a26025b95cdc80521ed64cc3a49a23f71">m_sScheme</link></para>
+</listitem>
+            <listitem><para>OUString <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1a22dd51279db24a363f46c5b70a20a012">m_aPrefix</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1a736c0fd10d0f6f84a0d21fec3efc3eee">m_bAuthority</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1afb20e18fa99b1ef065dd99259c5c4362">m_bUser</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1afc9f4d183f9aac07539fd4c827fde3f9">m_bAuth</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1a637f2ec6c24717dfe0bd40a1420982f6">m_bPassword</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1adb8a934af0ee626ef28cf8a8f344721d">m_bHost</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1aed601bcf765913380bee7b32057911e2">m_bPort</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1afe7b7c3d19dc27ce8c8a3ba1e0177ff4">m_bHierarchical</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info_1a3cacca8e2e71ee727e2b607fadc09231">m_bQuery</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Данные класса</title>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1a22dd51279db24a363f46c5b70a20a012"/><section>
+    <title>m_aPrefix</title>
+<indexterm><primary>m_aPrefix</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_aPrefix</secondary></indexterm>
+<para><computeroutput>OUString INetURLObject::SchemeInfo::m_aPrefix</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1afc9f4d183f9aac07539fd4c827fde3f9"/><section>
+    <title>m_bAuth</title>
+<indexterm><primary>m_bAuth</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_bAuth</secondary></indexterm>
+<para><computeroutput>bool INetURLObject::SchemeInfo::m_bAuth</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1a736c0fd10d0f6f84a0d21fec3efc3eee"/><section>
+    <title>m_bAuthority</title>
+<indexterm><primary>m_bAuthority</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_bAuthority</secondary></indexterm>
+<para><computeroutput>bool INetURLObject::SchemeInfo::m_bAuthority</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1afe7b7c3d19dc27ce8c8a3ba1e0177ff4"/><section>
+    <title>m_bHierarchical</title>
+<indexterm><primary>m_bHierarchical</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_bHierarchical</secondary></indexterm>
+<para><computeroutput>bool INetURLObject::SchemeInfo::m_bHierarchical</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1adb8a934af0ee626ef28cf8a8f344721d"/><section>
+    <title>m_bHost</title>
+<indexterm><primary>m_bHost</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_bHost</secondary></indexterm>
+<para><computeroutput>bool INetURLObject::SchemeInfo::m_bHost</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1a637f2ec6c24717dfe0bd40a1420982f6"/><section>
+    <title>m_bPassword</title>
+<indexterm><primary>m_bPassword</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_bPassword</secondary></indexterm>
+<para><computeroutput>bool INetURLObject::SchemeInfo::m_bPassword</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1aed601bcf765913380bee7b32057911e2"/><section>
+    <title>m_bPort</title>
+<indexterm><primary>m_bPort</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_bPort</secondary></indexterm>
+<para><computeroutput>bool INetURLObject::SchemeInfo::m_bPort</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1a3cacca8e2e71ee727e2b607fadc09231"/><section>
+    <title>m_bQuery</title>
+<indexterm><primary>m_bQuery</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_bQuery</secondary></indexterm>
+<para><computeroutput>bool INetURLObject::SchemeInfo::m_bQuery</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1afb20e18fa99b1ef065dd99259c5c4362"/><section>
+    <title>m_bUser</title>
+<indexterm><primary>m_bUser</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_bUser</secondary></indexterm>
+<para><computeroutput>bool INetURLObject::SchemeInfo::m_bUser</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_scheme_info_1a26025b95cdc80521ed64cc3a49a23f71"/><section>
+    <title>m_sScheme</title>
+<indexterm><primary>m_sScheme</primary><secondary>INetURLObject::SchemeInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::SchemeInfo</primary><secondary>m_sScheme</secondary></indexterm>
+<para><computeroutput>OUString INetURLObject::SchemeInfo::m_sScheme</computeroutput></para></section>
+<para>
+Объявления и описания членов структуры находятся в файле:</para>
+source/fsys/<link linkend="_urlobj_8cxx">urlobj.cxx</link></section>
+</section>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_fileutil_8cxx" xml:lang="ru">
+<title>Файл source/fsys/fileutil.cxx</title>
+<indexterm><primary>source/fsys/fileutil.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;tools/fileutil.hxx&gt;<?linebreak?></programlisting><simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacetools">tools</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_namespacetools_1a03166c4c776540bbeb90d0bbc449bfec">tools::IsMappedWebDAVPath</link> (const OUString &amp;rURL, OUString *pRealURL)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

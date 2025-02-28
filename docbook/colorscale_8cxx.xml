@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_colorscale_8cxx" xml:lang="ru">
+<title>Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/colorscale.cxx</title>
+<indexterm><primary>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/colorscale.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;memory&gt;<?linebreak?>#include &lt;colorscale.hxx&gt;<?linebreak?>#include &lt;document.hxx&gt;<?linebreak?>#include &lt;formulacell.hxx&gt;<?linebreak?>#include &lt;fillinfo.hxx&gt;<?linebreak?>#include &lt;bitmaps.hlst&gt;<?linebreak?>#include &lt;tokenarray.hxx&gt;<?linebreak?>#include &lt;refupdatecontext.hxx&gt;<?linebreak?>#include &lt;refdata.hxx&gt;<?linebreak?>#include &lt;editeng/fhgtitem.hxx&gt;<?linebreak?>#include &lt;scitems.hxx&gt;<?linebreak?>#include &lt;formula/token.hxx&gt;<?linebreak?>#include &lt;vcl/bitmapex.hxx&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;cassert&gt;<?linebreak?></programlisting></section>

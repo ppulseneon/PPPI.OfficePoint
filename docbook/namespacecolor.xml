@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacecolor" xml:lang="ru">
+<title>Пространство имен color</title>
+<indexterm><primary>color</primary></indexterm>
+<simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_namespacecolor_1ab51a9a12ab7bc80a8cb47b018c290313">createFromString</link> (OString const &amp;rString, Color &amp;rColor)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Функции</title>
+<anchor xml:id="_namespacecolor_1ab51a9a12ab7bc80a8cb47b018c290313"/><section>
+    <title>createFromString()</title>
+<indexterm><primary>createFromString</primary><secondary>color</secondary></indexterm>
+<indexterm><primary>color</primary><secondary>createFromString</secondary></indexterm>
+<para><computeroutput>bool color::createFromString (OString const &amp; rString, Color &amp; rColor)</computeroutput></para></section>
+</section>
+</section>

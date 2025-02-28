@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacetools" xml:lang="ru">
+<title>Пространство имен tools</title>
+<indexterm><primary>tools</primary></indexterm>
+<simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_namespacetools_1a03166c4c776540bbeb90d0bbc449bfec">IsMappedWebDAVPath</link> (const OUString &amp;rURL, OUString *pRealURL)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Функции</title>
+<anchor xml:id="_namespacetools_1a03166c4c776540bbeb90d0bbc449bfec"/><section>
+    <title>IsMappedWebDAVPath()</title>
+<indexterm><primary>IsMappedWebDAVPath</primary><secondary>tools</secondary></indexterm>
+<indexterm><primary>tools</primary><secondary>IsMappedWebDAVPath</secondary></indexterm>
+<para><computeroutput>bool tools::IsMappedWebDAVPath (const OUString &amp; rURL, OUString * pRealURL)</computeroutput></para></section>
+</section>
+</section>

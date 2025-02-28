@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_3a7bf1e2791aed72ceba25b1c59adfd1" xml:lang="ru">
+<title>Содержание директории source</title>
+<indexterm><primary>Содержание директории source</primary></indexterm>
+<simplesect>
+    <title>Директории    </title>
+        <itemizedlist>
+            <listitem><para>директория <link linkend="_dir_d31235a1b6c24aaa5b6024d64551bde8">fsys</link></para>
+</listitem>
+            <listitem><para>директория <link linkend="_dir_74e5d3d5fb7bad0c134a65b269d99f33">generic</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_fillinfo_8cxx" xml:lang="ru">
+<title>Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/fillinfo.cxx</title>
+<indexterm><primary>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/fillinfo.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;scitems.hxx&gt;<?linebreak?>#include &lt;editeng/boxitem.hxx&gt;<?linebreak?>#include &lt;editeng/lineitem.hxx&gt;<?linebreak?>#include &lt;editeng/shaditem.hxx&gt;<?linebreak?>#include &lt;editeng/brushitem.hxx&gt;<?linebreak?>#include &lt;svx/framelink.hxx&gt;<?linebreak?>#include &lt;osl/diagnose.h&gt;<?linebreak?>#include &lt;fillinfo.hxx&gt;<?linebreak?>#include &lt;document.hxx&gt;<?linebreak?>#include &lt;table.hxx&gt;<?linebreak?>#include &lt;attrib.hxx&gt;<?linebreak?>#include &lt;attarray.hxx&gt;<?linebreak?>#include &lt;markarr.hxx&gt;<?linebreak?>#include &lt;markdata.hxx&gt;<?linebreak?>#include &lt;patattr.hxx&gt;<?linebreak?>#include &lt;poolhelp.hxx&gt;<?linebreak?>#include &lt;docpool.hxx&gt;<?linebreak?>#include &lt;conditio.hxx&gt;<?linebreak?>#include &lt;stlpool.hxx&gt;<?linebreak?>#include &lt;cellvalue.hxx&gt;<?linebreak?>#include &lt;mtvcellfunc.hxx&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;limits&gt;<?linebreak?>#include &lt;vector&gt;<?linebreak?>#include &lt;memory&gt;<?linebreak?></programlisting><simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_fillinfo_8cxx_1ae1fd7743819a21e7f113a2bd5fca5a29">lcl_GetMergeRange</link> (SCCOL nX, SCROW nY, SCSIZE nArrY, const ScDocument *pDoc, RowInfo *pRowInfo, SCCOL nX1, SCROW nY1, SCTAB nTab, SCCOL &amp;rStartX, SCROW &amp;rStartY, SCCOL &amp;rEndX, SCROW &amp;rEndY)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Функции</title>
+<anchor xml:id="_fillinfo_8cxx_1ae1fd7743819a21e7f113a2bd5fca5a29"/><section>
+    <title>lcl_GetMergeRange()</title>
+<indexterm><primary>lcl_GetMergeRange</primary><secondary>fillinfo.cxx</secondary></indexterm>
+<indexterm><primary>fillinfo.cxx</primary><secondary>lcl_GetMergeRange</secondary></indexterm>
+<para><computeroutput>static void lcl_GetMergeRange (SCCOL nX, SCROW nY, SCSIZE nArrY, const ScDocument * pDoc, RowInfo * pRowInfo, SCCOL nX1, SCROW nY1, SCTAB nTab, SCCOL &amp; rStartX, SCROW &amp; rStartY, SCCOL &amp; rEndX, SCROW &amp; rEndY)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+</section>

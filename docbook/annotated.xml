@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="ru">
+<title>Классы</title>
+Классы с их кратким описанием.<link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info">INetURLObject::PrefixInfo</link><link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info">INetURLObject::SchemeInfo</link></section>

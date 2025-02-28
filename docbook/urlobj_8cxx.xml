@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_urlobj_8cxx" xml:lang="ru">
+<title>Файл source/fsys/urlobj.cxx</title>
+<indexterm><primary>source/fsys/urlobj.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;sal/config.h&gt;<?linebreak?>#include &lt;tools/urlobj.hxx&gt;<?linebreak?>#include &lt;tools/debug.hxx&gt;<?linebreak?>#include &lt;tools/inetmime.hxx&gt;<?linebreak?>#include &lt;tools/stream.hxx&gt;<?linebreak?>#include &lt;com/sun/star/uno/Reference.hxx&gt;<?linebreak?>#include &lt;com/sun/star/util/XStringWidth.hpp&gt;<?linebreak?>#include &lt;o3tl/enumarray.hxx&gt;<?linebreak?>#include &lt;osl/diagnose.h&gt;<?linebreak?>#include &lt;osl/file.hxx&gt;<?linebreak?>#include &lt;rtl/character.hxx&gt;<?linebreak?>#include &lt;rtl/string.h&gt;<?linebreak?>#include &lt;rtl/textenc.h&gt;<?linebreak?>#include &lt;rtl/ustring.hxx&gt;<?linebreak?>#include &lt;sal/log.hxx&gt;<?linebreak?>#include &lt;sal/types.h&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;cassert&gt;<?linebreak?>#include &lt;limits&gt;<?linebreak?>#include &lt;memory&gt;<?linebreak?>#include &lt;string_view&gt;<?linebreak?>#include &lt;string.h&gt;<?linebreak?>#include &lt;com/sun/star/uno/Sequence.hxx&gt;<?linebreak?>#include &lt;comphelper/base64.hxx&gt;<?linebreak?>#include &lt;comphelper/string.hxx&gt;<?linebreak?></programlisting><simplesect>
+    <title>Классы    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_i_net_u_r_l_object_1_1_scheme_info">INetURLObject::SchemeInfo</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info">INetURLObject::PrefixInfo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

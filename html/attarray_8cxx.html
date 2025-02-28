@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OfficePoint: Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/attarray.cxx</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">OfficePoint<span id="projectnumber">&#160;0.1</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('attarray_8cxx.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл attarray.cxx</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;attarray.hxx&gt;</code><br />
+<code>#include &lt;scitems.hxx&gt;</code><br />
+<code>#include &lt;editeng/borderline.hxx&gt;</code><br />
+<code>#include &lt;editeng/boxitem.hxx&gt;</code><br />
+<code>#include &lt;editeng/lineitem.hxx&gt;</code><br />
+<code>#include &lt;editeng/shaditem.hxx&gt;</code><br />
+<code>#include &lt;editeng/editobj.hxx&gt;</code><br />
+<code>#include &lt;editeng/justifyitem.hxx&gt;</code><br />
+<code>#include &lt;osl/diagnose.h&gt;</code><br />
+<code>#include &lt;poolcach.hxx&gt;</code><br />
+<code>#include &lt;global.hxx&gt;</code><br />
+<code>#include &lt;document.hxx&gt;</code><br />
+<code>#include &lt;docpool.hxx&gt;</code><br />
+<code>#include &lt;docsh.hxx&gt;</code><br />
+<code>#include &lt;patattr.hxx&gt;</code><br />
+<code>#include &lt;stlsheet.hxx&gt;</code><br />
+<code>#include &lt;stlpool.hxx&gt;</code><br />
+<code>#include &lt;markarr.hxx&gt;</code><br />
+<code>#include &lt;globstr.hrc&gt;</code><br />
+<code>#include &lt;scresid.hxx&gt;</code><br />
+<code>#include &lt;segmenttree.hxx&gt;</code><br />
+<code>#include &lt;editdataarray.hxx&gt;</code><br />
+<code>#include &lt;cellvalue.hxx&gt;</code><br />
+<code>#include &lt;editutil.hxx&gt;</code><br />
+<code>#include &lt;mtvelements.hxx&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a3b87dd3d6c27ef4201a5d6b3be6040e0" id="r_a3b87dd3d6c27ef4201a5d6b3be6040e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b87dd3d6c27ef4201a5d6b3be6040e0">SetLineColor</a> (SvxBorderLine const *dest, Color c)</td></tr>
+<tr class="separator:a3b87dd3d6c27ef4201a5d6b3be6040e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526d3efa39ef0dbd3c2c21d6521b1de0" id="r_a526d3efa39ef0dbd3c2c21d6521b1de0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a526d3efa39ef0dbd3c2c21d6521b1de0">SetLine</a> (const SvxBorderLine *dest, const SvxBorderLine *src)</td></tr>
+<tr class="separator:a526d3efa39ef0dbd3c2c21d6521b1de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992b0c42e15d7468739a58bbc07f519d" id="r_a992b0c42e15d7468739a58bbc07f519d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a992b0c42e15d7468739a58bbc07f519d">lcl_MergeDeep</a> (SfxItemSet &amp;rMergeSet, const SfxItemSet &amp;rSource)</td></tr>
+<tr class="separator:a992b0c42e15d7468739a58bbc07f519d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec2ad4a97bb5eccd0b66bc96a00e3ff" id="r_a1ec2ad4a97bb5eccd0b66bc96a00e3ff"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ec2ad4a97bb5eccd0b66bc96a00e3ff">lcl_TestAttr</a> (const SvxBorderLine *pOldLine, const SvxBorderLine *pNewLine, sal_uInt8 &amp;rModified, const SvxBorderLine *&amp;rpNew)</td></tr>
+<tr class="separator:a1ec2ad4a97bb5eccd0b66bc96a00e3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dafb9933034d3403f55bc597bd76130" id="r_a6dafb9933034d3403f55bc597bd76130"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dafb9933034d3403f55bc597bd76130">lcl_MergeToFrame</a> (SvxBoxItem *pLineOuter, SvxBoxInfoItem *pLineInner, ScLineFlags &amp;rFlags, const ScPatternAttr *pPattern, bool bLeft, SCCOL nDistRight, bool bTop, SCROW nDistBottom)</td></tr>
+<tr class="separator:a6dafb9933034d3403f55bc597bd76130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:aeaca69a84c07b9aa2a60499fe8f2ea40" id="r_aeaca69a84c07b9aa2a60499fe8f2ea40"><td class="memItemLeft" align="right" valign="top">const SCROW&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaca69a84c07b9aa2a60499fe8f2ea40">SC_VISATTR_STOP</a> = 84</td></tr>
+<tr class="separator:aeaca69a84c07b9aa2a60499fe8f2ea40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a992b0c42e15d7468739a58bbc07f519d" name="a992b0c42e15d7468739a58bbc07f519d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992b0c42e15d7468739a58bbc07f519d">&#9670;&#160;</a></span>lcl_MergeDeep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void lcl_MergeDeep </td>
+          <td>(</td>
+          <td class="paramtype">SfxItemSet &amp;</td>          <td class="paramname"><span class="paramname"><em>rMergeSet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SfxItemSet &amp;</td>          <td class="paramname"><span class="paramname"><em>rSource</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dafb9933034d3403f55bc597bd76130" name="a6dafb9933034d3403f55bc597bd76130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dafb9933034d3403f55bc597bd76130">&#9670;&#160;</a></span>lcl_MergeToFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void lcl_MergeToFrame </td>
+          <td>(</td>
+          <td class="paramtype">SvxBoxItem *</td>          <td class="paramname"><span class="paramname"><em>pLineOuter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SvxBoxInfoItem *</td>          <td class="paramname"><span class="paramname"><em>pLineInner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ScLineFlags &amp;</td>          <td class="paramname"><span class="paramname"><em>rFlags</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ScPatternAttr *</td>          <td class="paramname"><span class="paramname"><em>pPattern</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bLeft</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCCOL</td>          <td class="paramname"><span class="paramname"><em>nDistRight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bTop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SCROW</td>          <td class="paramname"><span class="paramname"><em>nDistBottom</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ec2ad4a97bb5eccd0b66bc96a00e3ff" name="a1ec2ad4a97bb5eccd0b66bc96a00e3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec2ad4a97bb5eccd0b66bc96a00e3ff">&#9670;&#160;</a></span>lcl_TestAttr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool lcl_TestAttr </td>
+          <td>(</td>
+          <td class="paramtype">const SvxBorderLine *</td>          <td class="paramname"><span class="paramname"><em>pOldLine</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SvxBorderLine *</td>          <td class="paramname"><span class="paramname"><em>pNewLine</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sal_uInt8 &amp;</td>          <td class="paramname"><span class="paramname"><em>rModified</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SvxBorderLine *&amp;</td>          <td class="paramname"><span class="paramname"><em>rpNew</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a526d3efa39ef0dbd3c2c21d6521b1de0" name="a526d3efa39ef0dbd3c2c21d6521b1de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a526d3efa39ef0dbd3c2c21d6521b1de0">&#9670;&#160;</a></span>SetLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SetLine </td>
+          <td>(</td>
+          <td class="paramtype">const SvxBorderLine *</td>          <td class="paramname"><span class="paramname"><em>dest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const SvxBorderLine *</td>          <td class="paramname"><span class="paramname"><em>src</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b87dd3d6c27ef4201a5d6b3be6040e0" name="a3b87dd3d6c27ef4201a5d6b3be6040e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b87dd3d6c27ef4201a5d6b3be6040e0">&#9670;&#160;</a></span>SetLineColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SetLineColor </td>
+          <td>(</td>
+          <td class="paramtype">SvxBorderLine const *</td>          <td class="paramname"><span class="paramname"><em>dest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="aeaca69a84c07b9aa2a60499fe8f2ea40" name="aeaca69a84c07b9aa2a60499fe8f2ea40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaca69a84c07b9aa2a60499fe8f2ea40">&#9670;&#160;</a></span>SC_VISATTR_STOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const SCROW SC_VISATTR_STOP = 84</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_0d27ce74e9bd514c31e1d63efab6b388.html">core</a></li><li class="navelem"><a class="el" href="dir_db113c0609e6f10711d3ba1b83510b30.html">data</a></li><li class="navelem"><a class="el" href="attarray_8cxx.html">attarray.cxx</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

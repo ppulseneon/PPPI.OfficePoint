@@ -28,11 +28,29 @@
 namespace tools
 {
 
+/**
+ * @brief Вычисление длины линии.
+ *
+ * Рассчитывает длину линии, используя формулу Евклидова расстояния
+ * между начальной и конечной точками.
+ *
+ * @return double Длина линии
+ */
 double Line::GetLength() const
 {
     return hypot( maStart.X() - maEnd.X(), maStart.Y() - maEnd.Y() );
 }
 
+/**
+ * @brief Поиск точки пересечения двух линий.
+ *
+ * Определяет, пересекаются ли две линии, и если да, то вычисляет
+ * координаты точки пересечения в целочисленных координатах.
+ *
+ * @param rLine Вторая линия
+ * @param[out] rIntersection Точка пересечения (если существует)
+ * @return bool true, если линии пересекаются, иначе false
+ */
 bool Line::Intersection( const Line& rLine, Point& rIntersection ) const
 {
     double  fX, fY;
@@ -50,6 +68,17 @@ bool Line::Intersection( const Line& rLine, Point& rIntersection ) const
     return bRet;
 }
 
+/**
+ * @brief Поиск точки пересечения двух линий с точностью до вещественных чисел.
+ *
+ * Определяет, пересекаются ли две линии, и если да, то вычисляет
+ * координаты точки пересечения в вещественных числах.
+ *
+ * @param rLine Вторая линия
+ * @param[out] rIntersectionX X-координата точки пересечения
+ * @param[out] rIntersectionY Y-координата точки пересечения
+ * @return bool true, если линии пересекаются, иначе false
+ */
 bool Line::Intersection( const tools::Line& rLine, double& rIntersectionX, double& rIntersectionY ) const
 {
     const double    fAx = static_cast<double>(maEnd.X()) - maStart.X();
@@ -101,6 +130,17 @@ bool Line::Intersection( const tools::Line& rLine, double& rIntersectionX, doubl
     return bOk;
 }
 
+/**
+ * @brief Вычисление расстояния от точки до линии.
+ *
+ * Рассчитывает кратчайшее расстояние от заданной точки до линии.
+ * Если точка проецируется за пределы линии, расстояние вычисляется
+ * до ближайшего конца линии.
+ *
+ * @param rPtX X-координата точки
+ * @param rPtY Y-координата точки
+ * @return double Расстояние от точки до линии
+ */
 double Line::GetDistance( const double& rPtX, const double& rPtY ) const
 {
     double fDist;

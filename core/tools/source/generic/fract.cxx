@@ -242,23 +242,23 @@ Fraction& Fraction::operator /= ( const Fraction& rVal )
     return *this;
 }
 
-/** Inaccurate cancellation for a fraction.
+/** Неточное сокращение дроби.
 
-    Clip both nominator and denominator to said number of bits. If
-    either of those already have equal or less number of bits used,
-    this method does nothing.
+    Ограничить числитель и знаменатель указанным количеством битов. Если
+    либо числитель, либо знаменатель уже используют равное или меньшее количество битов,
+    этот метод ничего не делает.
 
-    @param nSignificantBits denotes, how many significant binary
-    digits to maintain, in both nominator and denominator.
+    @param nSignificantBits определяет, сколько значащих двоичных
+    цифр сохранять как в числителе, так и в знаменателе.
 
-    @example ReduceInaccurate(8) has an error <1% [1/2^(8-1)] - the
-    largest error occurs with the following pair of values:
+    @example ReduceInaccurate(8) имеет погрешность <1% [1/2^(8-1)] - наибольшая
+    погрешность возникает при следующей паре значений:
 
-    binary    1000000011111111111111111111111b/1000000000000000000000000000000b
-    =         1082130431/1073741824
-    = approx. 1.007812499
+    двоичное   1000000011111111111111111111111b/1000000000000000000000000000000b
+    =          1082130431/1073741824
+    = приблизительно 1.007812499
 
-    A ReduceInaccurate(8) yields 1/1.
+    ReduceInaccurate(8) даёт результат 1/1.
 */
 void Fraction::ReduceInaccurate( unsigned nSignificantBits )
 {
@@ -404,24 +404,6 @@ static boost::rational<sal_Int32> rational_FromDouble(double dVal)
     return boost::rational<sal_Int32>( sal_Int32(dVal), nDen );
 }
 
-/** Inaccurate cancellation for a fraction.
-
-    Clip both nominator and denominator to said number of bits. If
-    either of those already have equal or less number of bits used,
-    this method does nothing.
-
-    @param nSignificantBits denotes, how many significant binary
-    digits to maintain, in both nominator and denominator.
-
-    @example ReduceInaccurate(8) has an error <1% [1/2^(8-1)] - the
-    largest error occurs with the following pair of values:
-
-    binary    1000000011111111111111111111111b/1000000000000000000000000000000b
-    =         1082130431/1073741824
-    = approx. 1.007812499
-
-    A ReduceInaccurate(8) yields 1/1.
-*/
 static void rational_ReduceInaccurate(boost::rational<sal_Int32>& rRational, unsigned nSignificantBits)
 {
     if ( !rRational )

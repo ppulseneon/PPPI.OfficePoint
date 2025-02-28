@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__reduce_inaccurate-example" xml:lang="ru">
+<title>ReduceInaccurate</title>
+
+<para>Неточное сокращение дроби.</para>
+
+<para>Ограничить числитель и знаменатель указанным количеством битов. Если либо числитель, либо знаменатель уже используют равное или меньшее количество битов, этот метод ничего не делает.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>nSignificantBits</entry><entry>
+<para>определяет, сколько значащих двоичных цифр сохранять как в числителе, так и в знаменателе.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                (8) имеет погрешность &lt;1% [1/2^(8-1)] - наибольшая погрешность возникает при следующей паре значений:</para>
+
+<para>двоичное 1000000011111111111111111111111b/1000000000000000000000000000000b = 1082130431/1073741824 = приблизительно 1.007812499</para>
+
+<para>ReduceInaccurate(8) даёт результат 1/1.</para>
+
+<para><literallayout><computeroutput></computeroutput></literallayout> </para>
+</section>

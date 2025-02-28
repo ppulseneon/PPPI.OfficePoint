@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_line_8cxx" xml:lang="ru">
+<title>Файл source/generic/line.cxx</title>
+<indexterm><primary>source/generic/line.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;sal/config.h&gt;<?linebreak?>#include &lt;basegfx/numeric/ftools.hxx&gt;<?linebreak?>#include &lt;tools/line.hxx&gt;<?linebreak?>#include &lt;tools/helpers.hxx&gt;<?linebreak?>#include &lt;cmath&gt;<?linebreak?></programlisting><simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacetools">tools</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

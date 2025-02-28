@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info" xml:lang="ru">
+<title>Структура INetURLObject::PrefixInfo</title>
+<indexterm><primary>INetURLObject::PrefixInfo</primary></indexterm>
+<simplesect>
+    <title>Открытые типы    </title>
+        <itemizedlist>
+            <listitem><para>enum class <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">Kind</link> { <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1a0008feba81a131902ece95d59f1b8f21">Official</link>
+, <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1aafbf0897a5a83fdd873dfb032ec695d3">Internal</link>
+, <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1ab206a1b4ea1097761f78e8876f6da779">External</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые атрибуты    </title>
+        <itemizedlist>
+            <listitem><para>OUString <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a6e25cb60fd504dea3325e2791f872fbb">m_aPrefix</link></para>
+</listitem>
+            <listitem><para>OUString <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1ae5be9fd7b16749c9d5e197552a853874">m_aTranslatedPrefix</link></para>
+</listitem>
+            <listitem><para>INetProtocol <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a8d78168f53a9d0a0e0efa28c6cdc5da0">m_eScheme</link></para>
+</listitem>
+            <listitem><para><link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">Kind</link> <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a0ba9073e61d91cc4b2dfc11108c517f8">m_eKind</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Перечисления</title>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1"/><section>
+    <title>Kind</title>
+<indexterm><primary>Kind</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>Kind</secondary></indexterm>
+<para><computeroutput>enum class <link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">INetURLObject::PrefixInfo::Kind</link><computeroutput>[strong]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Элементы перечислений</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Official</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>Official</secondary></indexterm>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1a0008feba81a131902ece95d59f1b8f21"/>Official</entry><entry></entry></row><row><entry><indexterm><primary>Internal</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>Internal</secondary></indexterm>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1aafbf0897a5a83fdd873dfb032ec695d3"/>Internal</entry><entry></entry></row><row><entry><indexterm><primary>External</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>External</secondary></indexterm>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1ab206a1b4ea1097761f78e8876f6da779"/>External</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Данные класса</title>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a6e25cb60fd504dea3325e2791f872fbb"/><section>
+    <title>m_aPrefix</title>
+<indexterm><primary>m_aPrefix</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>m_aPrefix</secondary></indexterm>
+<para><computeroutput>OUString INetURLObject::PrefixInfo::m_aPrefix</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1ae5be9fd7b16749c9d5e197552a853874"/><section>
+    <title>m_aTranslatedPrefix</title>
+<indexterm><primary>m_aTranslatedPrefix</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>m_aTranslatedPrefix</secondary></indexterm>
+<para><computeroutput>OUString INetURLObject::PrefixInfo::m_aTranslatedPrefix</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a0ba9073e61d91cc4b2dfc11108c517f8"/><section>
+    <title>m_eKind</title>
+<indexterm><primary>m_eKind</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>m_eKind</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_i_net_u_r_l_object_1_1_prefix_info_1a5e8c95dfb0ec081b437da98ac872fef1">Kind</link> INetURLObject::PrefixInfo::m_eKind</computeroutput></para></section>
+<anchor xml:id="_struct_i_net_u_r_l_object_1_1_prefix_info_1a8d78168f53a9d0a0e0efa28c6cdc5da0"/><section>
+    <title>m_eScheme</title>
+<indexterm><primary>m_eScheme</primary><secondary>INetURLObject::PrefixInfo</secondary></indexterm>
+<indexterm><primary>INetURLObject::PrefixInfo</primary><secondary>m_eScheme</secondary></indexterm>
+<para><computeroutput>INetProtocol INetURLObject::PrefixInfo::m_eScheme</computeroutput></para></section>
+<para>
+Объявления и описания членов структуры находятся в файле:</para>
+source/fsys/<link linkend="_urlobj_8cxx">urlobj.cxx</link></section>
+</section>

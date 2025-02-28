@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_broadcast_8cxx" xml:lang="ru">
+<title>Файл C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/broadcast.cxx</title>
+<indexterm><primary>C:/Users/pulseneon/RiderProjects/PPPI.OfficePoint1/core/source/core/data/broadcast.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;broadcast.hxx&gt;<?linebreak?>#include &lt;address.hxx&gt;<?linebreak?>#include &lt;formulacell.hxx&gt;<?linebreak?></programlisting><simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacesc">sc</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_gen_8cxx" xml:lang="ru">
+<title>Файл source/generic/gen.cxx</title>
+<indexterm><primary>source/generic/gen.cxx</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;sal/config.h&gt;<?linebreak?>#include &lt;rtl/string.hxx&gt;<?linebreak?>#include &lt;algorithm&gt;<?linebreak?>#include &lt;tuple&gt;<?linebreak?>#include &lt;o3tl/hash_combine.hxx&gt;<?linebreak?>#include &lt;o3tl/safeint.hxx&gt;<?linebreak?>#include &lt;tools/gen.hxx&gt;<?linebreak?></programlisting></section>
